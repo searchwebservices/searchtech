@@ -198,6 +198,15 @@ a:hover {
   box-shadow: 0 0 60px -15px var(--st-primary);
 }
 
+/* Primary button text colors for theme compatibility */
+.st-btn-primary {
+  color: white !important;
+}
+
+html.dark .st-btn-primary {
+  color: black !important;
+}
+
 .st-section {
   padding-top: 6rem;
   padding-bottom: 6rem;

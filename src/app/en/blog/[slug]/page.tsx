@@ -42,7 +42,7 @@ export default function BlogPostEN() {
             <div className="flex items-center gap-4">
               <ThemeToggle />
               <LanguageToggle locale="en" />
-              <Button asChild size="sm" className="bg-[var(--st-primary)] hover:bg-[var(--st-primary-hover)]">
+              <Button asChild size="sm" className="bg-[var(--st-primary)] hover:bg-[var(--st-primary-hover)] text-white dark:text-black">
                 <Link href="/en/schedule">
                   <Calendar className="w-4 h-4 mr-2" />
                   Schedule
@@ -121,7 +121,7 @@ export default function BlogPostEN() {
             <p className="text-[var(--st-text-muted)] mb-6">
               Schedule a free consultation with our operating system architects in Los Cabos.
             </p>
-            <Button asChild size="lg" className="bg-[var(--st-primary)] hover:bg-[var(--st-primary-hover)]">
+            <Button asChild size="lg" className="bg-[var(--st-primary)] hover:bg-[var(--st-primary-hover)] text-white dark:text-black">
               <Link href="/en/schedule">
                 <Calendar className="w-5 h-5 mr-2" />
                 Schedule Consultation

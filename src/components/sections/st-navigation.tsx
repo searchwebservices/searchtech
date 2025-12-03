@@ -101,9 +101,9 @@ const STNavigation = ({ locale = "es" }: STNavigationProps) => {
               <Button
                 asChild
                 size="sm"
-                className="hidden md:inline-flex h-10 px-5 text-sm font-medium bg-[var(--st-primary)] hover:bg-[var(--st-primary-light)] rounded-full transition-all duration-300"
+                className="hidden md:inline-flex h-10 px-5 text-sm font-medium bg-[var(--st-primary)] hover:bg-[var(--st-primary-light)] rounded-full transition-all duration-300 text-white dark:text-black"
               >
-                <Link href={agendarPath} className="!text-white dark:!text-black flex items-center">
+                <Link href={agendarPath} className="flex items-center">
                   <Calendar className="w-4 h-4 mr-2" />
                   {ctaText}
                 </Link>
@@ -174,9 +174,9 @@ const STNavigation = ({ locale = "es" }: STNavigationProps) => {
                 <div className="pt-4 border-t border-[var(--st-border)]">
                   <Button
                     asChild
-                    className="w-full h-12 text-base font-medium bg-[var(--st-primary)] hover:bg-[var(--st-primary-light)] rounded-full"
+                    className="w-full h-12 text-base font-medium bg-[var(--st-primary)] hover:bg-[var(--st-primary-light)] rounded-full text-white dark:text-black"
                   >
-                    <Link href={agendarPath} onClick={() => setIsMobileMenuOpen(false)} className="!text-white dark:!text-black flex items-center justify-center">
+                    <Link href={agendarPath} onClick={() => setIsMobileMenuOpen(false)} className="flex items-center justify-center">
                       <Calendar className="w-5 h-5 mr-2" />
                       {ctaTextMobile}
                     </Link>

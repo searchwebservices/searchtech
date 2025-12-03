@@ -94,7 +94,7 @@ export default function SoftwareEmpresarialBCS() {
             <div className="flex items-center gap-4">
               <ThemeToggle />
               <LanguageToggle locale="es" />
-              <Button asChild size="sm" className="bg-[var(--st-primary)] hover:bg-[var(--st-primary-hover)]">
+              <Button asChild size="sm" className="bg-[var(--st-primary)] hover:bg-[var(--st-primary-hover)] text-white dark:text-black">
                 <Link href="/agendar">
                   <Calendar className="w-4 h-4 mr-2" />
                   Agendar
@@ -130,7 +130,7 @@ export default function SoftwareEmpresarialBCS() {
               Arquitectos de software locales que entienden tu mercado.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-[var(--st-primary)] hover:bg-[var(--st-primary-hover)] text-lg px-8">
+              <Button asChild size="lg" className="bg-[var(--st-primary)] hover:bg-[var(--st-primary-hover)] text-lg px-8 text-white dark:text-black">
                 <Link href="/agendar">
                   Consulta Gratuita en Persona
                   <ArrowRight className="ml-2 w-5 h-5" />
@@ -306,7 +306,7 @@ export default function SoftwareEmpresarialBCS() {
             <p className="text-lg text-[var(--st-text-muted)] mb-8">
               Nos reunimos contigo en Los Cabos, La Paz, o cualquier ubicación en BCS para entender tu negocio.
             </p>
-            <Button asChild size="lg" className="bg-[var(--st-primary)] hover:bg-[var(--st-primary-hover)] text-lg px-8">
+            <Button asChild size="lg" className="bg-[var(--st-primary)] hover:bg-[var(--st-primary-hover)] text-lg px-8 text-white dark:text-black">
               <Link href="/agendar">
                 <Calendar className="w-5 h-5 mr-2" />
                 Agendar Consulta Gratuita

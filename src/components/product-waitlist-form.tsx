@@ -95,7 +95,7 @@ export function ProductWaitlistForm({ productName, locale = "es" }: ProductWaitl
               <button
                 type="submit"
                 disabled={status === "loading" || !email}
-                className="px-6 py-4 rounded-xl bg-[var(--st-primary)] text-white font-medium hover:bg-[var(--st-primary-hover)] transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+                className="px-6 py-4 rounded-xl bg-[var(--st-primary)] text-white dark:text-black font-medium hover:bg-[var(--st-primary-hover)] transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
               >
                 {status === "loading" ? (
                   <>
