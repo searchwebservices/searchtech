@@ -73,7 +73,6 @@ const content = {
     subtitle: "Selecciona un producto y observa cómo nuestro AI procesa consultas específicas de cada industria.",
     placeholder: "Escribe tu pregunta...",
     thinking: "Analizando solicitud...",
-    clickToSend: "Clic para enviar",
     demoComplete: "Demo completada",
     tryAgain: "Reiniciar Demo",
     selectProduct: "Selecciona un Producto",
@@ -83,7 +82,6 @@ const content = {
     subtitle: "Select a product and watch how our AI processes industry-specific queries.",
     placeholder: "Type your question...",
     thinking: "Analyzing request...",
-    clickToSend: "Click to send",
     demoComplete: "Demo complete",
     tryAgain: "Restart Demo",
     selectProduct: "Select a Product",
@@ -1181,17 +1179,6 @@ const STAIDemo = ({ locale = "es" }: STAIDemoProps) => {
                         <Send className="w-4 h-4" />
                       </div>
                     </div>
-                    {stage === "typing" && displayedText === userText && (
-                      <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        className="absolute -bottom-6 left-0 right-0 text-center"
-                      >
-                        <span className="text-xs text-[var(--st-primary)] font-medium">
-                          {t.clickToSend}
-                        </span>
-                      </motion.div>
-                    )}
                   </div>
                 )}
               </div>
