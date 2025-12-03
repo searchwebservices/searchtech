@@ -270,7 +270,7 @@ const STHero = ({ locale = "es" }: STHeroProps) => {
           <Button
             asChild
             size="lg"
-            className="h-14 px-8 text-base font-semibold bg-[var(--st-primary)] hover:bg-[var(--st-primary-light)] rounded-full group transition-all duration-300 text-white dark:text-black"
+            className="h-14 px-8 text-base font-semibold bg-[var(--st-primary)] hover:bg-[var(--st-primary-light)] rounded-full group transition-all duration-300 !text-white dark:!text-black"
           >
             <Link href={t.agendarPath} className="!text-white dark:!text-black flex items-center">
               <Calendar className="w-5 h-5 mr-2" />

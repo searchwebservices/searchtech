@@ -253,7 +253,7 @@ const STTrust = ({ locale = "es" }: STTrustProps) => {
                 <Button
                   asChild
                   size="lg"
-                  className="h-16 px-10 text-lg font-semibold bg-[var(--st-primary)] hover:bg-[var(--st-primary-light)] rounded-full group transition-all duration-300 shadow-lg shadow-[var(--st-primary)]/20 text-white dark:text-black"
+                  className="h-16 px-10 text-lg font-semibold bg-[var(--st-primary)] hover:bg-[var(--st-primary-light)] rounded-full group transition-all duration-300 shadow-lg shadow-[var(--st-primary)]/20 !text-white dark:!text-black"
                 >
                   <Link href={t.agendarPath} className="!text-white dark:!text-black flex items-center">
                     <Calendar className="w-5 h-5 mr-3" />

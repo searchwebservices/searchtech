@@ -89,7 +89,7 @@ export default function SistemaOperativoPersonalizado() {
             <div className="flex items-center gap-4">
               <ThemeToggle />
               <LanguageToggle locale="es" />
-              <Button asChild size="sm" className="bg-[var(--st-primary)] hover:bg-[var(--st-primary-hover)] text-white dark:text-black">
+              <Button asChild size="sm" className="bg-[var(--st-primary)] hover:bg-[var(--st-primary-hover)] !text-white dark:!text-black">
                 <Link href="/agendar">
                   <Calendar className="w-4 h-4 mr-2" />
                   Agendar
@@ -124,7 +124,7 @@ export default function SistemaOperativoPersonalizado() {
               Un custom OS que unifica todas tus operaciones en una sola plataforma inteligente.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-[var(--st-primary)] hover:bg-[var(--st-primary-hover)] text-lg px-8 text-white dark:text-black">
+              <Button asChild size="lg" className="bg-[var(--st-primary)] hover:bg-[var(--st-primary-hover)] text-lg px-8 !text-white dark:!text-black">
                 <Link href="/agendar">
                   Solicitar Demo Gratuita
                   <ArrowRight className="ml-2 w-5 h-5" />
@@ -273,7 +273,7 @@ export default function SistemaOperativoPersonalizado() {
             <p className="text-lg text-[var(--st-text-muted)] mb-8">
               Agenda una consulta gratuita con nuestros arquitectos de sistemas operativos en Los Cabos.
             </p>
-            <Button asChild size="lg" className="bg-[var(--st-primary)] hover:bg-[var(--st-primary-hover)] text-lg px-8 text-white dark:text-black">
+            <Button asChild size="lg" className="bg-[var(--st-primary)] hover:bg-[var(--st-primary-hover)] text-lg px-8 !text-white dark:!text-black">
               <Link href="/agendar">
                 <Calendar className="w-5 h-5 mr-2" />
                 Agendar Consulta Gratuita

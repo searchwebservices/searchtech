@@ -360,7 +360,7 @@ export default function ResourcesPage() {
           </p>
           <Link
             href="/en/schedule"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[var(--st-primary)] text-white dark:text-black font-medium hover:bg-[var(--st-primary-hover)] transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[var(--st-primary)] !text-white dark:!text-black font-medium hover:bg-[var(--st-primary-hover)] transition-colors"
           >
             Schedule Free Consultation
             <ChevronRight className="w-4 h-4" />

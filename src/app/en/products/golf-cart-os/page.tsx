@@ -55,7 +55,7 @@ export default function GolfCartOSPageEN() {
               <div className="flex flex-wrap justify-center gap-4 mb-12">
                 <Link
                   href="/en/schedule"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[var(--st-primary)] text-white dark:text-black font-medium hover:bg-[var(--st-primary-hover)] transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[var(--st-primary)] !text-white dark:!text-black font-medium hover:bg-[var(--st-primary-hover)] transition-colors"
                 >
                   <Calendar className="w-4 h-4" />
                   Schedule Demo
@@ -206,7 +206,7 @@ export default function GolfCartOSPageEN() {
 
                 <Link
                   href="/en/schedule"
-                  className="block w-full py-4 rounded-xl bg-[var(--st-primary)] text-white dark:text-black font-medium text-center hover:bg-[var(--st-primary-hover)] transition-colors"
+                  className="block w-full py-4 rounded-xl bg-[var(--st-primary)] !text-white dark:!text-black font-medium text-center hover:bg-[var(--st-primary-hover)] transition-colors"
                 >
                   Schedule Free Consultation
                 </Link>
