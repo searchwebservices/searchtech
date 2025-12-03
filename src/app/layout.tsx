@@ -6,8 +6,69 @@ import Script from "next/script";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Search Technologies | Arquitectos de Software en Los Cabos",
-  description: "Diseñamos, construimos y mantenemos sistemas operativos inteligentes para negocios en Los Cabos y Baja California Sur.",
+  title: {
+    default: "Search Technologies | Arquitectos de Software en Los Cabos",
+    template: "%s | Search Technologies",
+  },
+  description:
+    "Diseñamos, construimos y mantenemos sistemas operativos inteligentes para negocios en Los Cabos y Baja California Sur. Agentic AI, software personalizado y soporte 24/7.",
+  keywords: [
+    "software Los Cabos",
+    "desarrollo software Cabo San Lucas",
+    "sistemas empresariales BCS",
+    "Agentic AI México",
+    "inteligencia artificial negocios",
+    "software personalizado",
+    "arquitectos de software",
+    "PropTech México",
+    "automatización empresarial",
+    "Baja California Sur tecnología",
+  ],
+  authors: [{ name: "Search Technologies" }],
+  creator: "Search Technologies",
+  publisher: "Search Technologies",
+  metadataBase: new URL("https://searchtech.mx"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "es-MX": "/",
+      "en-US": "/en",
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "es_MX",
+    alternateLocale: "en_US",
+    url: "https://searchtech.mx",
+    siteName: "Search Technologies",
+    title: "Search Technologies | Arquitectos de Software en Los Cabos",
+    description:
+      "Diseñamos, construimos y mantenemos sistemas operativos inteligentes para negocios en Los Cabos y Baja California Sur.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Search Technologies | Arquitectos de Software en Los Cabos",
+    description:
+      "Diseñamos, construimos y mantenemos sistemas operativos inteligentes para negocios en Los Cabos y Baja California Sur.",
+    creator: "@searchtech",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    icon: "/icon.svg",
+    apple: "/apple-icon.png",
+  },
+  manifest: "/manifest.json",
+  category: "technology",
 };
 
 export default function RootLayout({
