@@ -1,8 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#0a0a0a"/>
-  <g transform="translate(5, 5)">
-    <circle cx="10" cy="10" r="7" fill="none" stroke="#8b7cf7" stroke-width="2"/>
-    <line x1="15" y1="15" x2="20" y2="20" stroke="#8b7cf7" stroke-width="2" stroke-linecap="round"/>
+  <style>
+    @media (prefers-color-scheme: light) {
+      .icon-stroke { stroke: #1e40af; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .icon-stroke { stroke: #8b7cf7; }
+    }
+  </style>
+  <g transform="translate(16, 16) rotate(90) translate(-12, -12)">
+    <circle cx="11" cy="11" r="8" fill="none" class="icon-stroke" stroke="#6366f1" stroke-width="2.5"/>
+    <line x1="16.7" y1="16.7" x2="21" y2="21" class="icon-stroke" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round"/>
   </g>
 </svg>
 

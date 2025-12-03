@@ -13,7 +13,6 @@ export default function Icon() {
     (
       <div
         style={{
-          fontSize: 24,
           background: "#0a0a0a",
           width: "100%",
           height: "100%",
@@ -33,6 +32,7 @@ export default function Icon() {
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
+          style={{ transform: "rotate(90deg)" }}
         >
           <circle cx="11" cy="11" r="8" />
           <path d="m21 21-4.3-4.3" />

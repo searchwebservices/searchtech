@@ -63,7 +63,7 @@ const STNavigation = ({ locale = "es" }: STNavigationProps) => {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link href={homePath} className="flex items-center gap-2.5">
-              <Search className="w-6 h-6 text-[var(--st-primary)]" strokeWidth={1.5} />
+              <Search className="w-6 h-6 text-[var(--st-primary)]" strokeWidth={1.5} style={{ transform: 'rotate(90deg)' }} />
               <span
                 className="text-[var(--st-text-primary)] text-lg tracking-[0.2em]"
                 style={{ fontFamily: '"Montserrat", sans-serif', fontWeight: 300 }}

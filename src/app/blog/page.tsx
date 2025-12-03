@@ -19,7 +19,7 @@ export default function BlogIndex() {
         <div className="container">
           <div className="flex items-center justify-between h-16">
             <Link href="/" className="flex items-center gap-2.5">
-              <Search className="w-6 h-6 text-[var(--st-primary)]" strokeWidth={1.5} />
+              <Search className="w-6 h-6 text-[var(--st-primary)]" strokeWidth={1.5} style={{ transform: 'rotate(90deg)' }} />
               <span className="font-logo text-lg tracking-widest text-foreground">SEARCH</span>
             </Link>
             <div className="flex items-center gap-4">
@@ -131,7 +131,7 @@ export default function BlogIndex() {
         <div className="container">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <Link href="/" className="flex items-center gap-2">
-              <Search className="w-5 h-5 text-[var(--st-primary)]" strokeWidth={1.5} />
+              <Search className="w-5 h-5 text-[var(--st-primary)]" strokeWidth={1.5} style={{ transform: 'rotate(90deg)' }} />
               <span className="font-logo tracking-widest text-sm">SEARCH</span>
             </Link>
             <p className="text-sm text-[var(--st-text-muted)]">

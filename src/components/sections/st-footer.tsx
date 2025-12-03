@@ -55,7 +55,7 @@ const STFooter = ({ locale = "es" }: STFooterProps) => {
           <div className="md:col-span-5">
             <div className="mb-6">
               <div className="flex items-center gap-2.5 mb-4">
-                <Search className="w-7 h-7 text-[var(--st-primary)]" strokeWidth={1.5} />
+                <Search className="w-7 h-7 text-[var(--st-primary)]" strokeWidth={1.5} style={{ transform: 'rotate(90deg)' }} />
                 <span
                   className="text-[var(--st-text-primary)] text-xl tracking-[0.2em]"
                   style={{ fontFamily: '"Montserrat", sans-serif', fontWeight: 300 }}

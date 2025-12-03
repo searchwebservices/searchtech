@@ -23,7 +23,7 @@ export default function AgendarPage() {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2.5">
-              <Search className="w-6 h-6 text-[var(--st-primary)]" strokeWidth={1.5} />
+              <Search className="w-6 h-6 text-[var(--st-primary)]" strokeWidth={1.5} style={{ transform: 'rotate(90deg)' }} />
               <span
                 className="text-[var(--st-text-primary)] text-lg tracking-[0.2em]"
                 style={{ fontFamily: '"Montserrat", sans-serif', fontWeight: 300 }}
@@ -144,7 +144,7 @@ export default function AgendarPage() {
         <div className="container">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2.5">
-              <Search className="w-5 h-5 text-[var(--st-primary)]" strokeWidth={1.5} />
+              <Search className="w-5 h-5 text-[var(--st-primary)]" strokeWidth={1.5} style={{ transform: 'rotate(90deg)' }} />
               <span
                 className="text-sm tracking-[0.2em]"
                 style={{ fontFamily: '"Montserrat", sans-serif', fontWeight: 300 }}
