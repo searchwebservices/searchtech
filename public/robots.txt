@@ -1,11 +1,11 @@
 # robots.txt for Search | Operating Systems
-# https://searchtech.mx
+# https://searchos.tech
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://searchtech.mx/sitemap.xml
+Sitemap: https://searchos.tech/sitemap.xml
 
 # Crawl-delay (optional, be nice to servers)
 Crawl-delay: 1

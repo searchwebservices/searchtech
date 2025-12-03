@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { blogPosts } from "@/lib/blog-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://searchtech.mx";
+  const baseUrl = "https://searchos.tech";
 
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [

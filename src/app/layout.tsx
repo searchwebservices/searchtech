@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Search Operating Systems" }],
   creator: "Search Operating Systems",
   publisher: "Search Operating Systems",
-  metadataBase: new URL("https://searchtech.mx"),
+  metadataBase: new URL("https://searchos.tech"),
   alternates: {
     canonical: "/",
     languages: {
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "es_MX",
     alternateLocale: "en_US",
-    url: "https://searchtech.mx",
+    url: "https://searchos.tech",
     siteName: "Search | Operating Systems",
     title: "Search | Operating Systems — Custom OS para Negocios en Los Cabos",
     description:
@@ -112,13 +112,13 @@ export default function RootLayout({
               "@graph": [
                 {
                   "@type": "LocalBusiness",
-                  "@id": "https://searchtech.mx/#organization",
+                  "@id": "https://searchos.tech/#organization",
                   "name": "Search | Operating Systems",
                   "alternateName": "Search Operating Systems",
                   "description": "Diseñamos y construimos sistemas operativos personalizados para negocios en Los Cabos y Baja California Sur. Custom OS, Agentic AI y software empresarial.",
-                  "url": "https://searchtech.mx",
-                  "logo": "https://searchtech.mx/icon.svg",
-                  "image": "https://searchtech.mx/opengraph-image",
+                  "url": "https://searchos.tech",
+                  "logo": "https://searchos.tech/icon.svg",
+                  "image": "https://searchos.tech/opengraph-image",
                   "telephone": "+526242644012",
                   "email": "info@searchwebservices.tech",
                   "address": {
@@ -172,7 +172,7 @@ export default function RootLayout({
                   "alternateName": "Custom OS",
                   "description": "Diseño y desarrollo de sistemas operativos personalizados para negocios. Custom business operating systems built specifically for your workflows.",
                   "provider": {
-                    "@id": "https://searchtech.mx/#organization"
+                    "@id": "https://searchos.tech/#organization"
                   },
                   "areaServed": {
                     "@type": "State",
@@ -180,7 +180,7 @@ export default function RootLayout({
                   },
                   "availableChannel": {
                     "@type": "ServiceChannel",
-                    "serviceUrl": "https://searchtech.mx/agendar"
+                    "serviceUrl": "https://searchos.tech/agendar"
                   }
                 },
                 {
@@ -189,7 +189,7 @@ export default function RootLayout({
                   "name": "Agentic AI",
                   "description": "Asistentes de inteligencia artificial integrados en tu sistema operativo para automatizar decisiones y responder preguntas de negocio.",
                   "provider": {
-                    "@id": "https://searchtech.mx/#organization"
+                    "@id": "https://searchos.tech/#organization"
                   }
                 },
                 {
@@ -199,17 +199,17 @@ export default function RootLayout({
                   "alternateName": "Business Software",
                   "description": "Desarrollo de software empresarial a la medida para negocios en Los Cabos y Baja California Sur.",
                   "provider": {
-                    "@id": "https://searchtech.mx/#organization"
+                    "@id": "https://searchos.tech/#organization"
                   }
                 },
                 {
                   "@type": "WebSite",
-                  "@id": "https://searchtech.mx/#website",
-                  "url": "https://searchtech.mx",
+                  "@id": "https://searchos.tech/#website",
+                  "url": "https://searchos.tech",
                   "name": "Search | Operating Systems",
                   "description": "Custom Operating Systems for Los Cabos & Baja California Sur",
                   "publisher": {
-                    "@id": "https://searchtech.mx/#organization"
+                    "@id": "https://searchos.tech/#organization"
                   },
                   "inLanguage": ["es-MX", "en-US"]
                 }

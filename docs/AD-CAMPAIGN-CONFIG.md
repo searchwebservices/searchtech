@@ -68,7 +68,7 @@ Descriptions (4):
 4. Custom operating systems starting at $200,000 MXN. Built specifically for your workflows. Free consultation available.
 
 Final URLs:
-- Primary: https://searchtech.mx/en/services/custom-operating-system
+- Primary: https://searchos.tech/en/services/custom-operating-system
 - Sitelinks: /en/blog, /en/schedule, /en/services/business-software-cabo
 ```
 
@@ -116,7 +116,7 @@ Descriptions (4):
 4. Sistemas operativos desde $200,000 MXN. Diseñado específicamente para tus flujos. Consulta gratuita disponible.
 
 Final URLs:
-- Primary: https://searchtech.mx/servicios/sistema-operativo-personalizado
+- Primary: https://searchos.tech/servicios/sistema-operativo-personalizado
 - Sitelinks: /blog, /agendar, /servicios/software-empresarial-baja-california-sur
 ```
 
@@ -207,7 +207,7 @@ Stop running operations on Excel and WhatsApp. We build custom OS solutions that
 
 Local team in Los Cabos. In-person consultations.
 
-👉 Learn more at searchtech.mx
+👉 Learn more at searchos.tech
 ```
 
 **Primary Text (Spanish):**
@@ -221,13 +221,13 @@ Deja de operar con Excel y WhatsApp. Construimos sistemas operativos personaliza
 
 Equipo local en Los Cabos. Consultas en persona.
 
-👉 Conoce más en searchtech.mx
+👉 Conoce más en searchos.tech
 ```
 
 **Headline:** Search | Operating Systems
 **Description:** Custom OS for Cabo Businesses
 **CTA Button:** Learn More
-**Destination URL:** https://searchtech.mx (Spanish) or https://searchtech.mx/en (English)
+**Destination URL:** https://searchos.tech (Spanish) or https://searchos.tech/en (English)
 
 ### Image Recommendations
 

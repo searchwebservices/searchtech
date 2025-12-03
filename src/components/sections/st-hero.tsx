@@ -93,7 +93,7 @@ const DashboardMockup = ({ locale }: DashboardMockupProps) => {
           <div className="flex-1 flex justify-center">
             <div className="bg-[var(--st-surface-elevated)] rounded-md px-4 py-1.5 text-xs font-mono text-[var(--st-text-muted)] flex items-center gap-2">
               <span className="text-[var(--st-primary)]">●</span>
-              sistema-operativo.searchtech.mx
+              sistema-operativo.searchos.tech
             </div>
           </div>
         </div>

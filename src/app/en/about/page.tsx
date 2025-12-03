@@ -94,8 +94,8 @@ export default function AboutPageEN() {
           </p>
           <p className="mt-4">
             <strong>Schedule a Consultation:</strong>{" "}
-            <a href="https://searchtech.mx/en/schedule" className="text-blue-600 hover:underline">
-              searchtech.mx/en/schedule
+            <a href="https://searchos.tech/en/schedule" className="text-blue-600 hover:underline">
+              searchos.tech/en/schedule
             </a>
           </p>
         </section>
@@ -164,8 +164,8 @@ export default function AboutPageEN() {
             "name": "Search | Operating Systems",
             "alternateName": ["Search Operating Systems", "Search OS", "SearchTech"],
             "description": "Custom operating system development for businesses in Los Cabos and Baja California Sur. We design and build bespoke software solutions with automation, AI integration, and 24/7 support.",
-            "url": "https://searchtech.mx",
-            "logo": "https://searchtech.mx/icon.svg",
+            "url": "https://searchos.tech",
+            "logo": "https://searchos.tech/icon.svg",
             "telephone": "+526242644012",
             "email": "info@searchwebservices.tech",
             "address": {
