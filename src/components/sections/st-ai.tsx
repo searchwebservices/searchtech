@@ -13,6 +13,7 @@ import {
   Sparkles,
   Bot,
 } from "lucide-react";
+import STAIDemo from "./st-ai-demo";
 
 const content = {
   es: {
@@ -270,6 +271,9 @@ const STAI = ({ locale = "es" }: STAIProps) => {
         >
           <p className="text-[var(--st-text-muted)] text-sm max-w-2xl mx-auto">{t.bottomNote}</p>
         </motion.div>
+
+        {/* Interactive AI Demo */}
+        <STAIDemo locale={locale} />
       </div>
     </section>
   );
