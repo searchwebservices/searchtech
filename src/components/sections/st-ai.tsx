@@ -7,21 +7,26 @@ import {
   Car,
   Palmtree,
   FlaskConical,
+  Heart,
+  Building2,
   MessageSquare,
   TrendingUp,
   ClipboardCheck,
   Sparkles,
   Bot,
+  ChevronRight,
+  Users,
 } from "lucide-react";
+import Link from "next/link";
 import STAIDemo from "./st-ai-demo";
 
 const content = {
   es: {
-    badge: "Inteligencia Artificial",
-    headline: ["Agentic AI:", "Tu Asistente de Negocios 24/7"],
-    subtitle: "Nuestro AI no es un chatbot genérico. Está",
-    subtitleHighlight: "integrado en tu base de datos",
-    subtitleEnd: "para entender tu inventario, finanzas y clientes, dándote respuestas y sugerencias concretas.",
+    badge: "Nuestros Productos",
+    headline: ["Sistemas Operativos", "Inteligentes"],
+    subtitle: "Plataformas de software construidas con Agentic AI,",
+    subtitleHighlight: "diseñadas para industrias específicas",
+    subtitleEnd: "en Los Cabos y Baja California Sur.",
     capability: {
       badge: "Full Context Read",
       title: "Multi-Tool Cross-Analysis",
@@ -29,40 +34,80 @@ const content = {
       dbLabel: "Base de datos",
       insights: "→ Insights Accionables",
     },
-    useCases: [
+    products: [
       {
-        id: "zycar",
-        subtitle: "Ventas y Trazabilidad",
-        title: "ZYCAR OS",
-        query: '"¿Qué carritos en inventario llevan más de 6 meses y cuáles tienen el margen más alto?"',
-        response: "El AI responde con la lista de unidades más antiguas y sugiere acciones para moverlas, priorizando por margen de ganancia.",
-        features: ["Análisis de inventario en tiempo real", "Predicción de rotación", "Alertas de stock inteligentes"],
+        id: "golf-cart-os",
+        href: "/productos/golf-cart-os",
+        category: "Rentas de Vehículos",
+        title: "Golf Cart OS",
+        description: "Sistema operativo completo para negocios de renta de golf carts, UTVs y vehículos recreativos.",
+        query: '"¿Qué carritos llevan más de 6 meses en inventario y cuáles tienen el margen más alto?"',
+        features: ["Gestión de flota", "Mantenimiento predictivo", "Reservaciones automáticas"],
+        partners: ["ZYCAR"],
+        partnerLabel: "Socio Estratégico",
+        cta: "Ver Producto",
       },
       {
-        id: "concierge",
-        subtitle: "Planificación y Flujo",
-        title: "Cabo Concierge",
-        query: '"Planea un itinerario de 5 días para una familia con niños, incluyendo reservaciones y transporte."',
-        response: "Automatiza flujos de trabajo conversacionales complejos—planear un viaje completo día a día sin llenar formularios.",
-        features: ["Itinerarios personalizados", "Reservaciones automáticas", "Coordinación multi-proveedor"],
+        id: "cabo-concierge",
+        href: "/productos/cabo-concierge",
+        category: "Hospitalidad & Eventos",
+        title: "Cabo Concierge AI",
+        description: "Plataforma de concierge inteligente para planificación de bodas, eventos y experiencias en Los Cabos.",
+        query: '"Planea un itinerario de 5 días para una familia, incluyendo reservaciones y transporte."',
+        features: ["Itinerarios AI", "Coordinación multi-vendor", "Reservaciones automáticas"],
+        partners: ["Unique Cabo Weddings", "Borja Ponce Eventos", "Momentum Cabo", "ExperienceLab"],
+        partnerLabel: "Socios Estratégicos",
+        cta: "Próximamente",
+        comingSoon: true,
       },
       {
-        id: "golden",
-        subtitle: "Validación de Procesos",
-        title: "Golden Sands",
+        id: "batchcraft-os",
+        href: "/productos/batchcraft-os",
+        category: "Manufactura & Calidad",
+        title: "BatchCraft OS",
+        description: "Sistema de trazabilidad y control de calidad para producción en lotes y manufactura artesanal.",
         query: '"Verifica que el lote #47 cumpla con todos los pasos de calidad antes de embotellar."',
-        response: "Un sistema que obliga a sus operadores a seguir los pasos de seguridad críticos (ej. monitoreo de pH) antes de avanzar la producción.",
-        features: ["Checklists obligatorios", "Trazabilidad de lotes", "Cumplimiento normativo"],
+        features: ["Trazabilidad de lotes", "Checklists obligatorios", "Cumplimiento normativo"],
+        partners: ["Golden Sands", "Simbiotica MX"],
+        partnerLabel: "Socios Estratégicos",
+        cta: "Ver Producto",
+      },
+      {
+        id: "cabo-tails",
+        href: "/productos/cabo-tails",
+        category: "Open Source",
+        title: "Cabo Tails",
+        description: "OS de código abierto para refugios de animales: matching de adopciones con AI y coordinación de voluntarios.",
+        query: '"Encuentra familias compatibles para Luna basándose en historial de adopciones exitosas."',
+        features: ["Matching AI de adopciones", "App para voluntarios", "Gestión de refugio"],
+        partners: [],
+        partnerLabel: "Código Abierto",
+        cta: "Contribuir",
+        openSource: true,
+      },
+      {
+        id: "experience-os",
+        href: "/productos/experience-os",
+        category: "PropTech",
+        title: "Experience OS",
+        description: "Transforma property managers en empresas PropTech completas. Aumenta clientes, satisfacción y valuación.",
+        query: '"¿Qué propiedades tienen mayor ROI y cuáles necesitan atención en reviews?"',
+        features: ["Gestión de propiedades", "Experiencia de huéspedes", "Analytics avanzados"],
+        partners: [],
+        partnerLabel: "En Desarrollo",
+        cta: "Lista de Espera",
+        comingSoon: true,
       },
     ],
-    bottomNote: "Cada sistema es diseñado específicamente para tu industria y flujo de trabajo. El AI aprende de tus datos y mejora con cada interacción.",
+    bottomNote: "Cada producto incluye AI integrada que aprende de tus datos y mejora con cada interacción.",
+    viewAll: "Ver Todos los Productos",
   },
   en: {
-    badge: "Artificial Intelligence",
-    headline: ["Agentic AI:", "Your 24/7 Business Assistant"],
-    subtitle: "Our AI is not a generic chatbot. It's",
-    subtitleHighlight: "integrated into your database",
-    subtitleEnd: "to understand your inventory, finances, and clients, giving you concrete answers and suggestions.",
+    badge: "Our Products",
+    headline: ["Intelligent", "Operating Systems"],
+    subtitle: "Software platforms built with Agentic AI,",
+    subtitleHighlight: "designed for specific industries",
+    subtitleEnd: "in Los Cabos and Baja California Sur.",
     capability: {
       badge: "Full Context Read",
       title: "Multi-Tool Cross-Analysis",
@@ -70,38 +115,78 @@ const content = {
       dbLabel: "Database",
       insights: "→ Actionable Insights",
     },
-    useCases: [
+    products: [
       {
-        id: "zycar",
-        subtitle: "Sales & Traceability",
-        title: "ZYCAR OS",
-        query: '"Which carts in inventory have been sitting for more than 6 months and which have the highest margin?"',
-        response: "The AI responds with the list of oldest units and suggests actions to move them, prioritizing by profit margin.",
-        features: ["Real-time inventory analysis", "Turnover prediction", "Smart stock alerts"],
+        id: "golf-cart-os",
+        href: "/en/products/golf-cart-os",
+        category: "Vehicle Rentals",
+        title: "Golf Cart OS",
+        description: "Complete operating system for golf cart, UTV, and recreational vehicle rental businesses.",
+        query: '"Which carts have been in inventory for 6+ months and which have the highest margin?"',
+        features: ["Fleet management", "Predictive maintenance", "Automatic reservations"],
+        partners: ["ZYCAR"],
+        partnerLabel: "Strategic Partner",
+        cta: "View Product",
       },
       {
-        id: "concierge",
-        subtitle: "Planning & Workflow",
-        title: "Cabo Concierge",
-        query: '"Plan a 5-day itinerary for a family with kids, including reservations and transport."',
-        response: "Automates complex conversational workflows—plan a complete day-by-day trip without filling out forms.",
-        features: ["Personalized itineraries", "Automatic reservations", "Multi-vendor coordination"],
+        id: "cabo-concierge",
+        href: "/en/products/cabo-concierge",
+        category: "Hospitality & Events",
+        title: "Cabo Concierge AI",
+        description: "Intelligent concierge platform for wedding planning, events, and experiences in Los Cabos.",
+        query: '"Plan a 5-day itinerary for a family, including reservations and transport."',
+        features: ["AI itineraries", "Multi-vendor coordination", "Automatic reservations"],
+        partners: ["Unique Cabo Weddings", "Borja Ponce Eventos", "Momentum Cabo", "ExperienceLab"],
+        partnerLabel: "Strategic Partners",
+        cta: "Coming Soon",
+        comingSoon: true,
       },
       {
-        id: "golden",
-        subtitle: "Process Validation",
-        title: "Golden Sands",
+        id: "batchcraft-os",
+        href: "/en/products/batchcraft-os",
+        category: "Manufacturing & Quality",
+        title: "BatchCraft OS",
+        description: "Traceability and quality control system for batch production and artisanal manufacturing.",
         query: '"Verify that batch #47 complies with all quality steps before bottling."',
-        response: "A system that forces your operators to follow critical safety steps (e.g., pH monitoring) before advancing production.",
-        features: ["Mandatory checklists", "Batch traceability", "Regulatory compliance"],
+        features: ["Batch traceability", "Mandatory checklists", "Regulatory compliance"],
+        partners: ["Golden Sands", "Simbiotica MX"],
+        partnerLabel: "Strategic Partners",
+        cta: "View Product",
+      },
+      {
+        id: "cabo-tails",
+        href: "/en/products/cabo-tails",
+        category: "Open Source",
+        title: "Cabo Tails",
+        description: "Open source OS for animal shelters: AI-powered adoption matching and volunteer coordination app.",
+        query: '"Find compatible families for Luna based on successful adoption history."',
+        features: ["AI adoption matching", "Volunteer app", "Shelter management"],
+        partners: [],
+        partnerLabel: "Open Source",
+        cta: "Contribute",
+        openSource: true,
+      },
+      {
+        id: "experience-os",
+        href: "/en/products/experience-os",
+        category: "PropTech",
+        title: "Experience OS",
+        description: "Transform property managers into full PropTech companies. Increase clients, satisfaction, and valuation.",
+        query: '"Which properties have highest ROI and which need attention on reviews?"',
+        features: ["Property management", "Guest experience", "Advanced analytics"],
+        partners: [],
+        partnerLabel: "In Development",
+        cta: "Join Waitlist",
+        comingSoon: true,
       },
     ],
-    bottomNote: "Each system is specifically designed for your industry and workflow. The AI learns from your data and improves with every interaction.",
+    bottomNote: "Each product includes integrated AI that learns from your data and improves with every interaction.",
+    viewAll: "View All Products",
   },
 };
 
-const useCaseIcons = [Car, Palmtree, FlaskConical];
-const accentIcons = [TrendingUp, MessageSquare, ClipboardCheck];
+const productIcons = [Car, Palmtree, FlaskConical, Heart, Building2];
+const accentIcons = [TrendingUp, MessageSquare, ClipboardCheck, Users, Sparkles];
 
 interface STAIProps {
   locale?: "es" | "en";
@@ -153,6 +238,7 @@ const STAI = ({ locale = "es" }: STAIProps) => {
           </p>
         </motion.div>
 
+        {/* AI Capability Visual */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -205,59 +291,185 @@ const STAI = ({ locale = "es" }: STAIProps) => {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
-          {t.useCases.map((useCase, index) => {
-            const Icon = useCaseIcons[index];
+        {/* Product Cards - Grid of 5 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          {t.products.slice(0, 3).map((product, index) => {
+            const Icon = productIcons[index];
             const AccentIcon = accentIcons[index];
             return (
               <motion.div
-                key={useCase.id}
+                key={product.id}
                 initial={{ opacity: 0, y: 40 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.3 + index * 0.15 }}
                 className="group relative"
               >
-                <div className="relative h-full bg-gradient-to-b from-[var(--st-primary)]/10 to-transparent rounded-2xl overflow-hidden border border-[var(--st-border)] hover:border-[var(--st-primary)]/30 transition-all duration-500">
-                  <div className="p-6 pb-0">
-                    <div className="flex items-start justify-between mb-4">
-                      <div className="w-14 h-14 rounded-xl flex items-center justify-center bg-[var(--st-primary)]/10">
-                        <Icon className="w-7 h-7 text-[var(--st-primary)]" />
-                      </div>
-                      <AccentIcon className="w-5 h-5 opacity-40 text-[var(--st-primary)]" />
-                    </div>
-
-                    <div className="mb-1">
-                      <span className="text-xs font-mono uppercase tracking-wider text-[var(--st-primary)]">
-                        {useCase.subtitle}
-                      </span>
-                    </div>
-                    <h3 className="text-xl font-bold mb-4">{useCase.title}</h3>
-                  </div>
-
-                  <div className="px-6 py-4 bg-[var(--st-surface)]/50">
-                    <div className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-md bg-[var(--st-border)] flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <MessageSquare className="w-3.5 h-3.5 text-[var(--st-text-muted)]" />
-                      </div>
-                      <p className="text-sm text-[var(--st-text-secondary)] italic">{useCase.query}</p>
-                    </div>
-                  </div>
-
-                  <div className="p-6 pt-4">
-                    <p className="text-sm text-[var(--st-text-muted)] mb-6">{useCase.response}</p>
-
-                    <div className="space-y-2">
-                      {useCase.features.map((feature, i) => (
-                        <div key={i} className="flex items-center gap-2 text-xs text-[var(--st-text-muted)]">
-                          <span className="w-1 h-1 rounded-full bg-[var(--st-primary)]" />
-                          {feature}
+                <Link href={product.href} className="block h-full">
+                  <div className="relative h-full bg-gradient-to-b from-[var(--st-primary)]/10 to-transparent rounded-2xl overflow-hidden border border-[var(--st-border)] hover:border-[var(--st-primary)]/50 transition-all duration-500 hover:shadow-xl hover:shadow-[var(--st-primary)]/10">
+                    <div className="p-6 pb-0">
+                      <div className="flex items-start justify-between mb-4">
+                        <div className="w-14 h-14 rounded-xl flex items-center justify-center bg-[var(--st-primary)]/10">
+                          <Icon className="w-7 h-7 text-[var(--st-primary)]" />
                         </div>
-                      ))}
-                    </div>
-                  </div>
+                        <div className="flex items-center gap-2">
+                          {product.comingSoon && (
+                            <span className="px-2 py-1 text-[10px] font-medium rounded-full bg-amber-500/10 text-amber-500 border border-amber-500/20">
+                              {locale === "es" ? "Próximamente" : "Coming Soon"}
+                            </span>
+                          )}
+                          {product.openSource && (
+                            <span className="px-2 py-1 text-[10px] font-medium rounded-full bg-green-500/10 text-green-500 border border-green-500/20">
+                              Open Source
+                            </span>
+                          )}
+                          <AccentIcon className="w-5 h-5 opacity-40 text-[var(--st-primary)]" />
+                        </div>
+                      </div>
 
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none bg-[radial-gradient(circle_at_50%_100%,var(--st-primary)/8,transparent_60%)]" />
-                </div>
+                      <div className="mb-1">
+                        <span className="text-xs font-mono uppercase tracking-wider text-[var(--st-primary)]">
+                          {product.category}
+                        </span>
+                      </div>
+                      <h3 className="text-xl font-bold mb-2">{product.title}</h3>
+                      <p className="text-sm text-[var(--st-text-muted)] mb-4">{product.description}</p>
+                    </div>
+
+                    <div className="px-6 py-3 bg-[var(--st-surface)]/50">
+                      <div className="flex items-start gap-3">
+                        <div className="w-6 h-6 rounded-md bg-[var(--st-border)] flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <MessageSquare className="w-3.5 h-3.5 text-[var(--st-text-muted)]" />
+                        </div>
+                        <p className="text-xs text-[var(--st-text-secondary)] italic line-clamp-2">{product.query}</p>
+                      </div>
+                    </div>
+
+                    <div className="p-6 pt-4">
+                      <div className="space-y-2 mb-6">
+                        {product.features.map((feature, i) => (
+                          <div key={i} className="flex items-center gap-2 text-xs text-[var(--st-text-muted)]">
+                            <span className="w-1 h-1 rounded-full bg-[var(--st-primary)]" />
+                            {feature}
+                          </div>
+                        ))}
+                      </div>
+
+                      {/* Partners Section */}
+                      {product.partners.length > 0 && (
+                        <div className="pt-4 border-t border-[var(--st-border)]">
+                          <div className="text-[10px] uppercase tracking-wider text-[var(--st-text-muted)] mb-2">
+                            {product.partnerLabel}
+                          </div>
+                          <div className="flex flex-wrap gap-2">
+                            {product.partners.map((partner) => (
+                              <span
+                                key={partner}
+                                className="px-2 py-1 text-[10px] rounded-md bg-[var(--st-surface-elevated)] border border-[var(--st-border)] text-[var(--st-text-muted)]"
+                              >
+                                {partner}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* CTA */}
+                      <div className="mt-4 flex items-center text-sm text-[var(--st-primary)] font-medium group-hover:gap-2 transition-all">
+                        {product.cta}
+                        <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                      </div>
+                    </div>
+
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none bg-[radial-gradient(circle_at_50%_100%,var(--st-primary)/8,transparent_60%)]" />
+                  </div>
+                </Link>
+              </motion.div>
+            );
+          })}
+        </div>
+
+        {/* Second Row - 2 Products */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-6 md:mt-8 max-w-4xl mx-auto">
+          {t.products.slice(3, 5).map((product, index) => {
+            const Icon = productIcons[index + 3];
+            const AccentIcon = accentIcons[index + 3];
+            return (
+              <motion.div
+                key={product.id}
+                initial={{ opacity: 0, y: 40 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, delay: 0.6 + index * 0.15 }}
+                className="group relative"
+              >
+                <Link href={product.href} className="block h-full">
+                  <div className="relative h-full bg-gradient-to-b from-[var(--st-primary)]/10 to-transparent rounded-2xl overflow-hidden border border-[var(--st-border)] hover:border-[var(--st-primary)]/50 transition-all duration-500 hover:shadow-xl hover:shadow-[var(--st-primary)]/10">
+                    <div className="p-6 pb-0">
+                      <div className="flex items-start justify-between mb-4">
+                        <div className="w-14 h-14 rounded-xl flex items-center justify-center bg-[var(--st-primary)]/10">
+                          <Icon className="w-7 h-7 text-[var(--st-primary)]" />
+                        </div>
+                        <div className="flex items-center gap-2">
+                          {product.comingSoon && (
+                            <span className="px-2 py-1 text-[10px] font-medium rounded-full bg-amber-500/10 text-amber-500 border border-amber-500/20">
+                              {locale === "es" ? "Próximamente" : "Coming Soon"}
+                            </span>
+                          )}
+                          {product.openSource && (
+                            <span className="px-2 py-1 text-[10px] font-medium rounded-full bg-green-500/10 text-green-500 border border-green-500/20">
+                              Open Source
+                            </span>
+                          )}
+                          <AccentIcon className="w-5 h-5 opacity-40 text-[var(--st-primary)]" />
+                        </div>
+                      </div>
+
+                      <div className="mb-1">
+                        <span className="text-xs font-mono uppercase tracking-wider text-[var(--st-primary)]">
+                          {product.category}
+                        </span>
+                      </div>
+                      <h3 className="text-xl font-bold mb-2">{product.title}</h3>
+                      <p className="text-sm text-[var(--st-text-muted)] mb-4">{product.description}</p>
+                    </div>
+
+                    <div className="px-6 py-3 bg-[var(--st-surface)]/50">
+                      <div className="flex items-start gap-3">
+                        <div className="w-6 h-6 rounded-md bg-[var(--st-border)] flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <MessageSquare className="w-3.5 h-3.5 text-[var(--st-text-muted)]" />
+                        </div>
+                        <p className="text-xs text-[var(--st-text-secondary)] italic line-clamp-2">{product.query}</p>
+                      </div>
+                    </div>
+
+                    <div className="p-6 pt-4">
+                      <div className="space-y-2 mb-6">
+                        {product.features.map((feature, i) => (
+                          <div key={i} className="flex items-center gap-2 text-xs text-[var(--st-text-muted)]">
+                            <span className="w-1 h-1 rounded-full bg-[var(--st-primary)]" />
+                            {feature}
+                          </div>
+                        ))}
+                      </div>
+
+                      {/* Open Source / Coming Soon Badge */}
+                      {(product.openSource || product.comingSoon) && product.partners.length === 0 && (
+                        <div className="pt-4 border-t border-[var(--st-border)]">
+                          <div className="text-[10px] uppercase tracking-wider text-[var(--st-text-muted)]">
+                            {product.partnerLabel}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* CTA */}
+                      <div className="mt-4 flex items-center text-sm text-[var(--st-primary)] font-medium group-hover:gap-2 transition-all">
+                        {product.cta}
+                        <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                      </div>
+                    </div>
+
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none bg-[radial-gradient(circle_at_50%_100%,var(--st-primary)/8,transparent_60%)]" />
+                  </div>
+                </Link>
               </motion.div>
             );
           })}
@@ -269,7 +481,14 @@ const STAI = ({ locale = "es" }: STAIProps) => {
           transition={{ duration: 0.6, delay: 0.9 }}
           className="mt-16 text-center"
         >
-          <p className="text-[var(--st-text-muted)] text-sm max-w-2xl mx-auto">{t.bottomNote}</p>
+          <p className="text-[var(--st-text-muted)] text-sm max-w-2xl mx-auto mb-6">{t.bottomNote}</p>
+          <Link
+            href={locale === "es" ? "/productos" : "/en/products"}
+            className="inline-flex items-center gap-2 text-[var(--st-primary)] font-medium hover:underline"
+          >
+            {t.viewAll}
+            <ChevronRight className="w-4 h-4" />
+          </Link>
         </motion.div>
 
         {/* Interactive AI Demo */}

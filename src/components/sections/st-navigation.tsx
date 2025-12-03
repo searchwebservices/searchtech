@@ -10,16 +10,14 @@ import { LanguageToggle } from "@/components/language-toggle";
 
 const navLinksEs = [
   { href: "#problema", label: "El Problema" },
-  { href: "#arquitectura", label: "Arquitectura" },
-  { href: "#casos", label: "Casos de Éxito" },
+  { href: "/productos", label: "Productos", isPage: true },
   { href: "#transparencia", label: "Precios" },
   { href: "/recursos", label: "FAQ", isPage: true },
 ];
 
 const navLinksEn = [
   { href: "#problem", label: "The Problem" },
-  { href: "#architecture", label: "Architecture" },
-  { href: "#cases", label: "Success Stories" },
+  { href: "/en/products", label: "Products", isPage: true },
   { href: "#pricing", label: "Pricing" },
   { href: "/en/resources", label: "FAQ", isPage: true },
 ];
