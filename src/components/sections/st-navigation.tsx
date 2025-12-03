@@ -13,7 +13,7 @@ const navLinksEs = [
   { href: "#arquitectura", label: "Arquitectura" },
   { href: "#casos", label: "Casos de Éxito" },
   { href: "#transparencia", label: "Precios" },
-  { href: "#nosotros", label: "Nosotros" },
+  { href: "/recursos", label: "FAQ", isPage: true },
 ];
 
 const navLinksEn = [
@@ -21,7 +21,7 @@ const navLinksEn = [
   { href: "#architecture", label: "Architecture" },
   { href: "#cases", label: "Success Stories" },
   { href: "#pricing", label: "Pricing" },
-  { href: "#about", label: "About Us" },
+  { href: "/en/resources", label: "FAQ", isPage: true },
 ];
 
 interface STNavigationProps {
@@ -75,13 +75,23 @@ const STNavigation = ({ locale = "es" }: STNavigationProps) => {
             {/* Desktop navigation */}
             <div className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className="text-sm text-[var(--st-text-muted)] hover:text-[var(--st-text-primary)] transition-colors"
-                >
-                  {link.label}
-                </a>
+                link.isPage ? (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className="text-sm text-[var(--st-text-muted)] hover:text-[var(--st-text-primary)] transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    className="text-sm text-[var(--st-text-muted)] hover:text-[var(--st-text-primary)] transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                )
               ))}
             </div>
 
@@ -134,17 +144,34 @@ const STNavigation = ({ locale = "es" }: STNavigationProps) => {
             <div className="absolute top-20 left-0 right-0 bg-[var(--st-surface)] border-b border-[var(--st-border)] p-6">
               <div className="flex flex-col gap-4">
                 {navLinks.map((link, index) => (
-                  <motion.a
-                    key={link.href}
-                    href={link.href}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.05 }}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-lg text-[var(--st-text-secondary)] hover:text-[var(--st-primary)] transition-colors py-2"
-                  >
-                    {link.label}
-                  </motion.a>
+                  link.isPage ? (
+                    <motion.div
+                      key={link.href}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.05 }}
+                    >
+                      <Link
+                        href={link.href}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        className="block text-lg text-[var(--st-text-secondary)] hover:text-[var(--st-primary)] transition-colors py-2"
+                      >
+                        {link.label}
+                      </Link>
+                    </motion.div>
+                  ) : (
+                    <motion.a
+                      key={link.href}
+                      href={link.href}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.05 }}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="text-lg text-[var(--st-text-secondary)] hover:text-[var(--st-primary)] transition-colors py-2"
+                    >
+                      {link.label}
+                    </motion.a>
+                  )
                 ))}
                 <div className="pt-4 border-t border-[var(--st-border)]">
                   <Button
