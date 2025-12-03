@@ -16,8 +16,21 @@ import {
   Bot,
   ChevronRight,
   Users,
+  ExternalLink,
 } from "lucide-react";
 import Link from "next/link";
+
+// Helper component to handle internal vs external links
+const ProductLink = ({ href, external, children, className }: { href: string; external?: boolean; children: React.ReactNode; className?: string }) => {
+  if (external) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+        {children}
+      </a>
+    );
+  }
+  return <Link href={href} className={className}>{children}</Link>;
+};
 import STAIDemo from "./st-ai-demo";
 
 const content = {
@@ -74,9 +87,10 @@ const content = {
       },
       {
         id: "cabo-tails",
-        href: "/productos/cabo-tails",
+        href: "https://cabotails.netlify.app/",
         category: "Open Source",
         title: "Cabo Tails",
+        external: true,
         description: "OS de código abierto para refugios de animales: matching de adopciones con AI y coordinación de voluntarios.",
         query: '"Encuentra familias compatibles para Luna basándose en historial de adopciones exitosas."',
         features: ["Matching AI de adopciones", "App para voluntarios", "Gestión de refugio"],
@@ -87,9 +101,10 @@ const content = {
       },
       {
         id: "experience-os",
-        href: "/productos/experience-os",
+        href: "https://experiencelab.tech/",
         category: "PropTech",
         title: "Experience OS",
+        external: true,
         description: "Transforma property managers en empresas PropTech completas. Aumenta clientes, satisfacción y valuación.",
         query: '"¿Qué propiedades tienen mayor ROI y cuáles necesitan atención en reviews?"',
         features: ["Gestión de propiedades", "Experiencia de huéspedes", "Analytics avanzados"],
@@ -155,9 +170,10 @@ const content = {
       },
       {
         id: "cabo-tails",
-        href: "/en/products/cabo-tails",
+        href: "https://cabotails.netlify.app/",
         category: "Open Source",
         title: "Cabo Tails",
+        external: true,
         description: "Open source OS for animal shelters: AI-powered adoption matching and volunteer coordination app.",
         query: '"Find compatible families for Luna based on successful adoption history."',
         features: ["AI adoption matching", "Volunteer app", "Shelter management"],
@@ -168,9 +184,10 @@ const content = {
       },
       {
         id: "experience-os",
-        href: "/en/products/experience-os",
+        href: "https://experiencelab.tech/",
         category: "PropTech",
         title: "Experience OS",
+        external: true,
         description: "Transform property managers into full PropTech companies. Increase clients, satisfaction, and valuation.",
         query: '"Which properties have highest ROI and which need attention on reviews?"',
         features: ["Property management", "Guest experience", "Advanced analytics"],
@@ -304,7 +321,7 @@ const STAI = ({ locale = "es" }: STAIProps) => {
                 transition={{ duration: 0.6, delay: 0.3 + index * 0.15 }}
                 className="group relative"
               >
-                <Link href={product.href} className="block h-full">
+                <ProductLink href={product.href} external={product.external} className="block h-full">
                   <div className="relative h-full bg-gradient-to-b from-[var(--st-primary)]/10 to-transparent rounded-2xl overflow-hidden border border-[var(--st-border)] hover:border-[var(--st-primary)]/50 transition-all duration-500 hover:shadow-xl hover:shadow-[var(--st-primary)]/10">
                     <div className="p-6 pb-0">
                       <div className="flex items-start justify-between mb-4">
@@ -376,13 +393,17 @@ const STAI = ({ locale = "es" }: STAIProps) => {
                       {/* CTA */}
                       <div className="mt-4 flex items-center text-sm text-[var(--st-primary)] font-medium group-hover:gap-2 transition-all">
                         {product.cta}
-                        <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                        {product.external ? (
+                          <ExternalLink className="w-4 h-4 ml-1" />
+                        ) : (
+                          <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                        )}
                       </div>
                     </div>
 
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none bg-[radial-gradient(circle_at_50%_100%,var(--st-primary)/8,transparent_60%)]" />
                   </div>
-                </Link>
+                </ProductLink>
               </motion.div>
             );
           })}
@@ -401,7 +422,7 @@ const STAI = ({ locale = "es" }: STAIProps) => {
                 transition={{ duration: 0.6, delay: 0.6 + index * 0.15 }}
                 className="group relative"
               >
-                <Link href={product.href} className="block h-full">
+                <ProductLink href={product.href} external={product.external} className="block h-full">
                   <div className="relative h-full bg-gradient-to-b from-[var(--st-primary)]/10 to-transparent rounded-2xl overflow-hidden border border-[var(--st-border)] hover:border-[var(--st-primary)]/50 transition-all duration-500 hover:shadow-xl hover:shadow-[var(--st-primary)]/10">
                     <div className="p-6 pb-0">
                       <div className="flex items-start justify-between mb-4">
@@ -463,13 +484,17 @@ const STAI = ({ locale = "es" }: STAIProps) => {
                       {/* CTA */}
                       <div className="mt-4 flex items-center text-sm text-[var(--st-primary)] font-medium group-hover:gap-2 transition-all">
                         {product.cta}
-                        <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                        {product.external ? (
+                          <ExternalLink className="w-4 h-4 ml-1" />
+                        ) : (
+                          <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                        )}
                       </div>
                     </div>
 
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none bg-[radial-gradient(circle_at_50%_100%,var(--st-primary)/8,transparent_60%)]" />
                   </div>
-                </Link>
+                </ProductLink>
               </motion.div>
             );
           })}

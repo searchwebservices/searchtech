@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Car, Palmtree, FlaskConical, Heart, Building2, ChevronRight, Search, ArrowLeft, Sparkles } from "lucide-react";
+import { Car, Palmtree, FlaskConical, Heart, Building2, ChevronRight, Search, ArrowLeft, Sparkles, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageToggle } from "@/components/language-toggle";
@@ -40,23 +40,25 @@ const products = [
   },
   {
     id: "cabo-tails",
-    href: "/productos/cabo-tails",
+    href: "https://cabotails.netlify.app/",
     icon: Heart,
     category: "Open Source",
     title: "Cabo Tails",
     description: "OS de código abierto para refugios de animales: matching de adopciones con AI.",
-    partners: [],
+    partners: ["ExperienceLab.tech"],
     status: "open-source",
+    external: true,
   },
   {
     id: "experience-os",
-    href: "/productos/experience-os",
+    href: "https://experiencelab.tech/",
     icon: Building2,
     category: "PropTech",
     title: "Experience OS",
     description: "Transforma property managers en empresas PropTech completas.",
-    partners: [],
+    partners: ["ExperienceLab.tech"],
     status: "coming-soon",
+    external: true,
   },
 ];
 
@@ -110,62 +112,121 @@ export default function ProductosPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
             >
-              <Link href={product.href} className="block group">
-                <div className="h-full p-6 rounded-2xl bg-[var(--st-surface)] border border-[var(--st-border)] hover:border-[var(--st-primary)]/50 hover:shadow-xl hover:shadow-[var(--st-primary)]/5 transition-all">
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="w-14 h-14 rounded-xl bg-[var(--st-primary)]/10 flex items-center justify-center">
-                      <product.icon className="w-7 h-7 text-[var(--st-primary)]" />
-                    </div>
-                    {product.status === "coming-soon" && (
-                      <span className="px-2 py-1 text-[10px] font-medium rounded-full bg-amber-500/10 text-amber-500 border border-amber-500/20">
-                        Próximamente
-                      </span>
-                    )}
-                    {product.status === "open-source" && (
-                      <span className="px-2 py-1 text-[10px] font-medium rounded-full bg-green-500/10 text-green-500 border border-green-500/20">
-                        Open Source
-                      </span>
-                    )}
-                  </div>
-
-                  <div className="text-xs font-mono uppercase tracking-wider text-[var(--st-primary)] mb-1">
-                    {product.category}
-                  </div>
-                  <h2 className="text-xl font-bold mb-2 group-hover:text-[var(--st-primary)] transition-colors">
-                    {product.title}
-                  </h2>
-                  <p className="text-sm text-[var(--st-text-muted)] mb-4">
-                    {product.description}
-                  </p>
-
-                  {product.partners.length > 0 && (
-                    <div className="mb-4">
-                      <div className="text-[10px] uppercase tracking-wider text-[var(--st-text-muted)] mb-2">
-                        Socios
+              {product.external ? (
+                <a href={product.href} target="_blank" rel="noopener noreferrer" className="block group">
+                  <div className="h-full p-6 rounded-2xl bg-[var(--st-surface)] border border-[var(--st-border)] hover:border-[var(--st-primary)]/50 hover:shadow-xl hover:shadow-[var(--st-primary)]/5 transition-all">
+                    <div className="flex items-start justify-between mb-4">
+                      <div className="w-14 h-14 rounded-xl bg-[var(--st-primary)]/10 flex items-center justify-center">
+                        <product.icon className="w-7 h-7 text-[var(--st-primary)]" />
                       </div>
-                      <div className="flex flex-wrap gap-1">
-                        {product.partners.slice(0, 3).map((partner) => (
-                          <span
-                            key={partner}
-                            className="px-2 py-0.5 text-[10px] rounded bg-[var(--st-surface-elevated)] border border-[var(--st-border)]"
-                          >
-                            {partner}
-                          </span>
-                        ))}
-                        {product.partners.length > 3 && (
-                          <span className="px-2 py-0.5 text-[10px] rounded bg-[var(--st-surface-elevated)] border border-[var(--st-border)]">
-                            +{product.partners.length - 3}
-                          </span>
-                        )}
-                      </div>
+                      {product.status === "coming-soon" && (
+                        <span className="px-2 py-1 text-[10px] font-medium rounded-full bg-amber-500/10 text-amber-500 border border-amber-500/20">
+                          Próximamente
+                        </span>
+                      )}
+                      {product.status === "open-source" && (
+                        <span className="px-2 py-1 text-[10px] font-medium rounded-full bg-green-500/10 text-green-500 border border-green-500/20">
+                          Open Source
+                        </span>
+                      )}
                     </div>
-                  )}
 
-                  <div className="flex items-center text-sm text-[var(--st-primary)] font-medium">
-                    Ver más <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                    <div className="text-xs font-mono uppercase tracking-wider text-[var(--st-primary)] mb-1">
+                      {product.category}
+                    </div>
+                    <h2 className="text-xl font-bold mb-2 group-hover:text-[var(--st-primary)] transition-colors">
+                      {product.title}
+                    </h2>
+                    <p className="text-sm text-[var(--st-text-muted)] mb-4">
+                      {product.description}
+                    </p>
+
+                    {product.partners.length > 0 && (
+                      <div className="mb-4">
+                        <div className="text-[10px] uppercase tracking-wider text-[var(--st-text-muted)] mb-2">
+                          Socios
+                        </div>
+                        <div className="flex flex-wrap gap-1">
+                          {product.partners.slice(0, 3).map((partner) => (
+                            <span
+                              key={partner}
+                              className="px-2 py-0.5 text-[10px] rounded bg-[var(--st-surface-elevated)] border border-[var(--st-border)]"
+                            >
+                              {partner}
+                            </span>
+                          ))}
+                          {product.partners.length > 3 && (
+                            <span className="px-2 py-0.5 text-[10px] rounded bg-[var(--st-surface-elevated)] border border-[var(--st-border)]">
+                              +{product.partners.length - 3}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    )}
+
+                    <div className="flex items-center text-sm text-[var(--st-primary)] font-medium">
+                      Visitar sitio <ExternalLink className="w-4 h-4 ml-1" />
+                    </div>
                   </div>
-                </div>
-              </Link>
+                </a>
+              ) : (
+                <Link href={product.href} className="block group">
+                  <div className="h-full p-6 rounded-2xl bg-[var(--st-surface)] border border-[var(--st-border)] hover:border-[var(--st-primary)]/50 hover:shadow-xl hover:shadow-[var(--st-primary)]/5 transition-all">
+                    <div className="flex items-start justify-between mb-4">
+                      <div className="w-14 h-14 rounded-xl bg-[var(--st-primary)]/10 flex items-center justify-center">
+                        <product.icon className="w-7 h-7 text-[var(--st-primary)]" />
+                      </div>
+                      {product.status === "coming-soon" && (
+                        <span className="px-2 py-1 text-[10px] font-medium rounded-full bg-amber-500/10 text-amber-500 border border-amber-500/20">
+                          Próximamente
+                        </span>
+                      )}
+                      {product.status === "open-source" && (
+                        <span className="px-2 py-1 text-[10px] font-medium rounded-full bg-green-500/10 text-green-500 border border-green-500/20">
+                          Open Source
+                        </span>
+                      )}
+                    </div>
+
+                    <div className="text-xs font-mono uppercase tracking-wider text-[var(--st-primary)] mb-1">
+                      {product.category}
+                    </div>
+                    <h2 className="text-xl font-bold mb-2 group-hover:text-[var(--st-primary)] transition-colors">
+                      {product.title}
+                    </h2>
+                    <p className="text-sm text-[var(--st-text-muted)] mb-4">
+                      {product.description}
+                    </p>
+
+                    {product.partners.length > 0 && (
+                      <div className="mb-4">
+                        <div className="text-[10px] uppercase tracking-wider text-[var(--st-text-muted)] mb-2">
+                          Socios
+                        </div>
+                        <div className="flex flex-wrap gap-1">
+                          {product.partners.slice(0, 3).map((partner) => (
+                            <span
+                              key={partner}
+                              className="px-2 py-0.5 text-[10px] rounded bg-[var(--st-surface-elevated)] border border-[var(--st-border)]"
+                            >
+                              {partner}
+                            </span>
+                          ))}
+                          {product.partners.length > 3 && (
+                            <span className="px-2 py-0.5 text-[10px] rounded bg-[var(--st-surface-elevated)] border border-[var(--st-border)]">
+                              +{product.partners.length - 3}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    )}
+
+                    <div className="flex items-center text-sm text-[var(--st-primary)] font-medium">
+                      Ver más <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </div>
+                </Link>
+              )}
             </motion.div>
           ))}
         </div>
