@@ -4,6 +4,19 @@ import * as React from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
+// Path mappings for pages with different names in each language
+const pathMappings: Record<string, string> = {
+  // Spanish -> English
+  "/agendar": "/en/demo",
+  "/recursos": "/en/resources",
+  "/productos": "/en/products",
+  // English -> Spanish
+  "/en/demo": "/agendar",
+  "/en/schedule": "/agendar",
+  "/en/resources": "/recursos",
+  "/en/products": "/productos",
+};
+
 export function LanguageToggle() {
   const pathname = usePathname();
   const router = useRouter();
@@ -11,6 +24,12 @@ export function LanguageToggle() {
   const isEnglish = pathname.startsWith("/en");
   
   const toggleLanguage = () => {
+    // Check for direct path mapping first
+    if (pathMappings[pathname]) {
+      router.push(pathMappings[pathname]);
+      return;
+    }
+    
     if (isEnglish) {
       // Go to Spanish (remove /en)
       const newPath = pathname.replace(/^\/en/, "") || "/";

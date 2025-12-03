@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1,
     },
-    // Calendar/Schedule pages
+    // Calendar/Schedule/Demo pages
     {
       url: `${baseUrl}/agendar`,
       lastModified: new Date(),
@@ -28,6 +28,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/en/schedule`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/en/demo`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
