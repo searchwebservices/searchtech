@@ -1,16 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Navigation from "@/components/sections/navigation";
-import HeroSection from "@/components/sections/hero";
-import WorkspacePreview from "@/components/sections/workspace-preview";
-import QuickstartSection from "@/components/sections/quickstart-section";
-import GeminiSection from "@/components/sections/gemini-section";
-import CollaborationSection from "@/components/sections/collaboration-section";
-import TestingSection from "@/components/sections/testing-section";
-import DeploymentSection from "@/components/sections/deployment-section";
-import InnovationSection from "@/components/sections/innovation-section";
-import Footer from "@/components/sections/footer";
+import STNavigation from "@/components/sections/st-navigation";
+import STHero from "@/components/sections/st-hero";
+import STProblem from "@/components/sections/st-problem";
+import STArchitecture from "@/components/sections/st-architecture";
+import STAI from "@/components/sections/st-ai";
+import STTransparency from "@/components/sections/st-transparency";
+import STTrust from "@/components/sections/st-trust";
+import STFooter from "@/components/sections/st-footer";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -25,18 +23,24 @@ export default function Home() {
 
   return (
     <>
-      <Navigation />
-      <main className="min-h-screen bg-black text-white overflow-x-hidden">
-        <HeroSection />
-        <WorkspacePreview />
-        <QuickstartSection />
-        <GeminiSection />
-        <CollaborationSection />
-        <TestingSection />
-        <DeploymentSection />
-        <InnovationSection />
+      <STNavigation locale="es" />
+      <main className="min-h-screen bg-[var(--background)] overflow-x-hidden">
+        <STHero locale="es" />
+        <div id="problema">
+          <STProblem locale="es" />
+        </div>
+        <div id="arquitectura">
+          <STArchitecture locale="es" />
+        </div>
+        <STAI locale="es" />
+        <div id="transparencia">
+          <STTransparency locale="es" />
+        </div>
+        <div id="nosotros">
+          <STTrust locale="es" />
+        </div>
       </main>
-      <Footer />
+      <STFooter locale="es" />
     </>
   );
 }
