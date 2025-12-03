@@ -21,7 +21,7 @@ const content = {
       },
       {
         title: "Ausencia de Inteligencia",
-        description: "Sus datos están encerrados en tablas sin un asistente que le dé respuestas accionables. No tiene visibilidad en tiempo real de su negocio.",
+        description: "Tus datos están encerrados en tablas sin un asistente que te dé respuestas accionables. No tienes visibilidad en tiempo real de tu negocio.",
       },
     ],
     quote: '"Economía de primer mundo,',

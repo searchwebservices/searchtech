@@ -46,8 +46,8 @@ interface DemoMessage {
 const content = {
   es: {
     title: "Experimente el Poder",
-    subtitle: "Haga clic en el campo de texto para enviar cada mensaje y ver cómo nuestro AI procesa su solicitud.",
-    placeholder: "Escriba su pregunta...",
+    subtitle: "Haz clic en el campo de texto para enviar cada mensaje y ver cómo nuestro AI procesa tu solicitud.",
+    placeholder: "Escribe tu pregunta...",
     thinking: "Analizando solicitud...",
     clickToSend: "Clic para enviar",
     demoComplete: "Demo completada",

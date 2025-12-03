@@ -22,17 +22,17 @@ const content = {
     workflow: [
       { title: "Detección Automática", description: "El sistema detecta cualquier error o comportamiento inesperado inmediatamente." },
       { title: "Notificación Instantánea", description: "Recibimos una alerta por correo electrónico en tiempo real con todos los detalles." },
-      { title: "Corrección Proactiva", description: "Empezamos a trabajar en la solución antes de que usted nos llame." },
+      { title: "Corrección Proactiva", description: "Empezamos a trabajar en la solución antes de que nos llames." },
       { title: "Resolución Confirmada", description: "Le notificamos cuando el problema está resuelto con un reporte detallado." },
     ],
     method: {
       title: "Si el sistema no es intuitivo,",
       titleHighlight: "el problema es nuestro.",
-      description: "Entendemos la frustración. Si nuestro sistema no es intuitivo para usted, no le decimos lo está haciendo mal.",
+      description: "Entendemos la frustración. Si nuestro sistema no es intuitivo para ti, no te decimos que lo estás haciendo mal.",
       features: [
         "Le explicamos la arquitectura claramente",
-        "Ajustamos el diseño a su lógica",
-        "Validamos cada cambio con usted",
+        "Ajustamos el diseño a tu lógica",
+        "Validamos cada cambio contigo",
       ],
       response: "<24h",
       responseLabel: "Tiempo promedio de respuesta",
@@ -47,7 +47,7 @@ const content = {
         badge: "Pago único",
         price: "$200,000",
         currency: "MXN",
-        note: "Mínimo · Trabajamos hacia arriba en complejidad",
+        note: "Mínimo · Escalamos según tus necesidades",
       },
       maintenance: {
         label: "Mantenimiento",

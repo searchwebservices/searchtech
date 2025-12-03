@@ -18,10 +18,10 @@ import STAIDemo from "./st-ai-demo";
 const content = {
   es: {
     badge: "Inteligencia Artificial",
-    headline: ["Agentic AI:", "Su Asistente de Negocios 24/7"],
+    headline: ["Agentic AI:", "Tu Asistente de Negocios 24/7"],
     subtitle: "Nuestro AI no es un chatbot genérico. Está",
-    subtitleHighlight: "integrado en su base de datos",
-    subtitleEnd: "para entender su inventario, finanzas y clientes, dándole respuestas y sugerencias concretas.",
+    subtitleHighlight: "integrado en tu base de datos",
+    subtitleEnd: "para entender tu inventario, finanzas y clientes, dándote respuestas y sugerencias concretas.",
     capability: {
       badge: "Full Context Read",
       title: "Multi-Tool Cross-Analysis",
@@ -55,7 +55,7 @@ const content = {
         features: ["Checklists obligatorios", "Trazabilidad de lotes", "Cumplimiento normativo"],
       },
     ],
-    bottomNote: "Cada sistema es diseñado específicamente para su industria y flujo de trabajo. El AI aprende de sus datos y mejora con cada interacción.",
+    bottomNote: "Cada sistema es diseñado específicamente para tu industria y flujo de trabajo. El AI aprende de tus datos y mejora con cada interacción.",
   },
   en: {
     badge: "Artificial Intelligence",
