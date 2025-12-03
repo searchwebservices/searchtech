@@ -80,8 +80,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/icon.svg",
-    apple: "/apple-icon.png",
+    icon: "/icon",
+    apple: "/apple-icon",
   },
   manifest: "/manifest.json",
   category: "technology",
