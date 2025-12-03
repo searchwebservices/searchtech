@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   Send, 
@@ -874,6 +874,7 @@ const STAIDemo = ({ locale = "es" }: STAIDemoProps) => {
   const [displayedText, setDisplayedText] = useState("");
   const [messages, setMessages] = useState<Message[]>([]);
   const [currentTools, setCurrentTools] = useState<Tool[]>([]);
+  const messagesContainerRef = useRef<HTMLDivElement>(null);
   
   const t = content[locale];
   const product = products.find((p) => p.id === selectedProduct)!;
@@ -915,6 +916,16 @@ const STAIDemo = ({ locale = "es" }: STAIDemoProps) => {
       return () => clearTimeout(timer);
     }
   }, [stage, currentMessageIndex, product.messages.length]);
+
+  // Auto-scroll to bottom when messages or state changes
+  useEffect(() => {
+    if (messagesContainerRef.current) {
+      messagesContainerRef.current.scrollTo({
+        top: messagesContainerRef.current.scrollHeight,
+        behavior: "smooth",
+      });
+    }
+  }, [messages, stage, currentTools]);
 
   // Handle send click
   const handleSend = useCallback(() => {
@@ -1047,7 +1058,10 @@ const STAIDemo = ({ locale = "es" }: STAIDemoProps) => {
               </div>
 
               {/* Messages Area */}
-              <div className="p-4 min-h-[300px] max-h-[400px] overflow-y-auto space-y-4">
+              <div 
+                ref={messagesContainerRef}
+                className="p-4 min-h-[300px] max-h-[400px] overflow-y-auto space-y-4"
+              >
                 <AnimatePresence mode="popLayout">
                   {messages.map((message, index) => (
                     <motion.div
