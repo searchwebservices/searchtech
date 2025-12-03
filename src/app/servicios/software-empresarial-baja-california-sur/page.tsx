@@ -7,6 +7,35 @@ import { ArrowRight, Check, Calendar, Search, MapPin, Building2, Palmtree, Ship,
 import Link from "next/link";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageToggle } from "@/components/language-toggle";
+import { FAQSchema } from "@/components/faq-schema";
+import { RelatedServices } from "@/components/related-services";
+
+const faqs = [
+  {
+    question: "¿Qué áreas de Baja California Sur cubren?",
+    answer: "Servimos toda Baja California Sur: Los Cabos (Cabo San Lucas y San José del Cabo), La Paz, Todos Santos, Los Barriles, East Cape, y cualquier comunidad de la península. Nos reunimos contigo donde estés.",
+  },
+  {
+    question: "¿Por qué necesito software empresarial local en BCS?",
+    answer: "Las agencias remotas no entienden las temporadas turísticas de BCS, la logística de la península, ni las expectativas de los clientes internacionales. Un equipo local diseña soluciones que se adaptan a la realidad de hacer negocios en Baja California Sur.",
+  },
+  {
+    question: "¿Qué tipo de negocios atienden en BCS?",
+    answer: "Atendemos rentas de vehículos (golf carts, UTVs, yates), bienes raíces, hoteles boutique, restaurantes, tours y experiencias, retail, y cualquier negocio que necesite automatizar operaciones y tener visibilidad en tiempo real.",
+  },
+  {
+    question: "¿Pueden integrar mi software existente?",
+    answer: "Sí, diseñamos sistemas operativos que se integran con tus herramientas existentes — sistemas de punto de venta, plataformas de reservas, herramientas de contabilidad, y más. Tu custom OS se convierte en el centro de toda tu operación.",
+  },
+  {
+    question: "¿Cuánto cuesta el software empresarial para BCS?",
+    answer: "La inversión mínima es de $200,000 MXN para construcción inicial, más mantenimiento desde $10,000 MXN/mes. Empezamos pequeño para conocerte y escalamos modularmente. Sin sorpresas — precios transparentes desde el día uno.",
+  },
+  {
+    question: "¿Ofrecen soporte en inglés y español?",
+    answer: "Sí, somos completamente bilingües. Muchos de nuestros clientes tienen equipos que hablan inglés o español, y nos adaptamos a tus necesidades de comunicación.",
+  },
+];
 
 const industries = [
   {
@@ -255,6 +284,12 @@ export default function SoftwareEmpresarialBCS() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSchema faqs={faqs} locale="es" />
+
+      {/* Related Services */}
+      <RelatedServices locale="es" currentPage="/servicios/software-empresarial-baja-california-sur" />
 
       {/* CTA */}
       <section className="py-20 bg-[var(--st-surface)]">

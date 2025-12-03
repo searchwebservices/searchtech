@@ -7,6 +7,35 @@ import { ArrowRight, Check, Calendar, Search, Cpu, Database, Zap, Shield, Users 
 import Link from "next/link";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageToggle } from "@/components/language-toggle";
+import { FAQSchema } from "@/components/faq-schema";
+import { RelatedServices } from "@/components/related-services";
+
+const faqs = [
+  {
+    question: "¿Qué es un sistema operativo personalizado para negocios?",
+    answer: "Un sistema operativo personalizado (custom OS) es una plataforma de software diseñada específicamente para tu negocio. A diferencia de software genérico, un custom OS conecta todas tus operaciones — ventas, inventario, clientes, finanzas — en un solo sistema integrado que automatiza tus procesos únicos y te da visibilidad completa de tu negocio en tiempo real.",
+  },
+  {
+    question: "¿Cuánto cuesta un sistema operativo personalizado en Los Cabos?",
+    answer: "La inversión mínima para un sistema operativo personalizado es de $200,000 MXN para la construcción inicial, más una cuota de mantenimiento desde $10,000 MXN/mes. Preferimos empezar con proyectos más pequeños y fundamentales para conocer tu negocio, y luego escalar modularmente según tus necesidades.",
+  },
+  {
+    question: "¿Cuánto tiempo toma desarrollar un custom OS?",
+    answer: "El tiempo de desarrollo varía según la complejidad, pero típicamente un sistema operativo base está listo en 8-12 semanas. Trabajamos de forma modular, entregando funcionalidades incrementalmente para que puedas empezar a ver valor desde las primeras semanas.",
+  },
+  {
+    question: "¿Por qué elegir un equipo local en Los Cabos?",
+    answer: "Un equipo local entiende el mercado de BCS — temporadas turísticas, logística de la península, y expectativas de clientes internacionales. Además, ofrecemos reuniones en persona, soporte sin demoras de zona horaria, y somos parte de la comunidad empresarial local.",
+  },
+  {
+    question: "¿Qué industrias se benefician de un sistema operativo personalizado?",
+    answer: "Cualquier negocio que maneje datos, clientes e inventario se beneficia: rentas de vehículos (golf carts, UTVs, yates), bienes raíces, hoteles boutique, restaurantes, tours y experiencias, y más. Si operas con Excel y WhatsApp, un custom OS transformará tu eficiencia.",
+  },
+  {
+    question: "¿Incluyen soporte técnico después del lanzamiento?",
+    answer: "Sí, la cuota de mantenimiento mensual incluye soporte técnico 24/7, monitoreo de errores, actualizaciones de seguridad, y optimización continua del sistema. Estamos a una llamada de distancia aquí en Los Cabos.",
+  },
+];
 import type { Metadata } from "next";
 
 const features = [
@@ -222,6 +251,12 @@ export default function SistemaOperativoPersonalizado() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSchema faqs={faqs} locale="es" />
+
+      {/* Related Services */}
+      <RelatedServices locale="es" currentPage="/servicios/sistema-operativo-personalizado" />
 
       {/* CTA */}
       <section className="py-20">

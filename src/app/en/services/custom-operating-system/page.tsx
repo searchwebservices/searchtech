@@ -7,6 +7,35 @@ import { ArrowRight, Check, Calendar, Search, Cpu, Database, Zap, Shield, Users 
 import Link from "next/link";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageToggle } from "@/components/language-toggle";
+import { FAQSchema } from "@/components/faq-schema";
+import { RelatedServices } from "@/components/related-services";
+
+const faqs = [
+  {
+    question: "What is a custom operating system for business?",
+    answer: "A custom operating system (custom OS) is a software platform designed specifically for your business. Unlike generic software, a custom OS connects all your operations — sales, inventory, clients, finances — into one integrated system that automates your unique processes and gives you complete real-time visibility into your business.",
+  },
+  {
+    question: "How much does a custom operating system cost in Los Cabos?",
+    answer: "The minimum investment for a custom operating system is $200,000 MXN for initial construction, plus maintenance starting at $10,000 MXN/month. We prefer to start with smaller, fundamental projects to understand your business, then scale modularly based on your needs.",
+  },
+  {
+    question: "How long does it take to develop a custom OS?",
+    answer: "Development time varies by complexity, but typically a base operating system is ready in 8-12 weeks. We work modularly, delivering features incrementally so you can start seeing value from the first weeks.",
+  },
+  {
+    question: "Why choose a local team in Los Cabos?",
+    answer: "A local team understands the BCS market — tourist seasons, peninsula logistics, and international client expectations. Plus, we offer in-person meetings, support without timezone delays, and we're part of the local business community.",
+  },
+  {
+    question: "What industries benefit from a custom operating system?",
+    answer: "Any business that handles data, clients, and inventory benefits: vehicle rentals (golf carts, UTVs, yachts), real estate, boutique hotels, restaurants, tours and experiences, and more. If you're running on Excel and WhatsApp, a custom OS will transform your efficiency.",
+  },
+  {
+    question: "Do you include technical support after launch?",
+    answer: "Yes, the monthly maintenance fee includes 24/7 technical support, error monitoring, security updates, and continuous system optimization. We're just a call away here in Los Cabos.",
+  },
+];
 
 const features = [
   {
@@ -221,6 +250,12 @@ export default function CustomOperatingSystem() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSchema faqs={faqs} locale="en" />
+
+      {/* Related Services */}
+      <RelatedServices locale="en" currentPage="/en/services/custom-operating-system" />
 
       {/* CTA */}
       <section className="py-20">

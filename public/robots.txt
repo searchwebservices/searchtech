@@ -1,0 +1,17 @@
+# robots.txt for Search | Operating Systems
+# https://searchtech.mx
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://searchtech.mx/sitemap.xml
+
+# Crawl-delay (optional, be nice to servers)
+Crawl-delay: 1
+
+# Block admin/API routes if any
+Disallow: /api/
+Disallow: /_next/
+Disallow: /visual-edits/
+

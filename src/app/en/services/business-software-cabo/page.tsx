@@ -7,6 +7,35 @@ import { ArrowRight, Check, Calendar, Search, MapPin, Building2, Palmtree, Ship,
 import Link from "next/link";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageToggle } from "@/components/language-toggle";
+import { FAQSchema } from "@/components/faq-schema";
+import { RelatedServices } from "@/components/related-services";
+
+const faqs = [
+  {
+    question: "What areas of Baja California Sur do you cover?",
+    answer: "We serve all of Baja California Sur: Los Cabos (Cabo San Lucas and San José del Cabo), La Paz, Todos Santos, Los Barriles, East Cape, and any community on the peninsula. We meet with you wherever you are.",
+  },
+  {
+    question: "Why do I need local business software in BCS?",
+    answer: "Remote agencies don't understand BCS tourist seasons, peninsula logistics, or international client expectations. A local team designs solutions that adapt to the reality of doing business in Baja California Sur.",
+  },
+  {
+    question: "What types of businesses do you serve in BCS?",
+    answer: "We serve vehicle rentals (golf carts, UTVs, yachts), real estate, boutique hotels, restaurants, tours and experiences, retail, and any business that needs to automate operations and have real-time visibility.",
+  },
+  {
+    question: "Can you integrate my existing software?",
+    answer: "Yes, we design operating systems that integrate with your existing tools — point of sale systems, booking platforms, accounting tools, and more. Your custom OS becomes the center of your entire operation.",
+  },
+  {
+    question: "How much does business software for BCS cost?",
+    answer: "Minimum investment is $200,000 MXN for initial construction, plus maintenance from $10,000 MXN/month. We start small to understand your business and scale modularly. No surprises — transparent pricing from day one.",
+  },
+  {
+    question: "Do you offer support in English and Spanish?",
+    answer: "Yes, we're fully bilingual. Many of our clients have teams that speak English or Spanish, and we adapt to your communication needs.",
+  },
+];
 
 const industries = [
   {
@@ -255,6 +284,12 @@ export default function BusinessSoftwareCabo() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSchema faqs={faqs} locale="en" />
+
+      {/* Related Services */}
+      <RelatedServices locale="en" currentPage="/en/services/business-software-cabo" />
 
       {/* CTA */}
       <section className="py-20 bg-[var(--st-surface)]">
