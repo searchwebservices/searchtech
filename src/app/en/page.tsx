@@ -8,7 +8,7 @@ import STTrust from "@/components/sections/st-trust";
 import STFooter from "@/components/sections/st-footer";
 
 export const metadata = {
-  title: "Search Technologies | Software Architects in Los Cabos",
+  title: "Search | Operating Systems",
   description: "We design, build, and maintain intelligent operating systems exclusively for your business in Los Cabos and Baja California Sur.",
 };
 

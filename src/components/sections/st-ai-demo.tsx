@@ -440,7 +440,7 @@ const STAIDemo = ({ locale = "es" }: STAIDemoProps) => {
               <Sparkles className="w-4 h-4 text-[var(--primary-foreground)]" />
             </div>
             <div>
-              <div className="text-sm font-medium">Search Tech AI</div>
+              <div className="text-sm font-medium">Search OS AI</div>
               <div className="text-xs text-[var(--st-text-muted)] font-mono">
                 {locale === "es" ? "Asistente de Negocios" : "Business Assistant"}
               </div>

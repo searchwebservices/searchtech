@@ -7,26 +7,42 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
   title: {
-    default: "Search Technologies | Arquitectos de Software en Los Cabos",
-    template: "%s | Search Technologies",
+    default: "Search | Operating Systems",
+    template: "%s | Search Operating Systems",
   },
   description:
-    "Diseñamos, construimos y mantenemos sistemas operativos inteligentes para negocios en Los Cabos y Baja California Sur. Agentic AI, software personalizado y soporte 24/7.",
+    "Diseñamos y construimos sistemas operativos personalizados para negocios en Los Cabos y Baja California Sur. Custom OS empresarial, Agentic AI y software a la medida con soporte 24/7.",
   keywords: [
+    // Core OS Keywords
+    "sistema operativo personalizado",
+    "sistema operativo empresarial",
+    "sistema operativo para negocios",
+    "custom operating system",
+    "custom OS",
+    "business operating system",
+    "Search operating systems",
+    // Local Keywords - Los Cabos
+    "sistema operativo Los Cabos",
     "software Los Cabos",
-    "desarrollo software Cabo San Lucas",
-    "sistemas empresariales BCS",
+    "custom OS Cabo San Lucas",
+    "operating system Los Cabos",
+    "software empresarial Cabo",
+    // Local Keywords - Baja
+    "sistemas operativos Baja California Sur",
+    "software BCS México",
+    "tecnología Baja California",
+    "desarrollo software San José del Cabo",
+    // Service Keywords
     "Agentic AI México",
     "inteligencia artificial negocios",
     "software personalizado",
     "arquitectos de software",
-    "PropTech México",
     "automatización empresarial",
-    "Baja California Sur tecnología",
+    "PropTech México",
   ],
-  authors: [{ name: "Search Technologies" }],
-  creator: "Search Technologies",
-  publisher: "Search Technologies",
+  authors: [{ name: "Search Operating Systems" }],
+  creator: "Search Operating Systems",
+  publisher: "Search Operating Systems",
   metadataBase: new URL("https://searchtech.mx"),
   alternates: {
     canonical: "/",
@@ -40,17 +56,17 @@ export const metadata: Metadata = {
     locale: "es_MX",
     alternateLocale: "en_US",
     url: "https://searchtech.mx",
-    siteName: "Search Technologies",
-    title: "Search Technologies | Arquitectos de Software en Los Cabos",
+    siteName: "Search | Operating Systems",
+    title: "Search | Operating Systems — Custom OS para Negocios en Los Cabos",
     description:
-      "Diseñamos, construimos y mantenemos sistemas operativos inteligentes para negocios en Los Cabos y Baja California Sur.",
+      "Creamos sistemas operativos personalizados y custom OS para negocios en Los Cabos y Baja California Sur. Software empresarial a la medida con Agentic AI.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Search Technologies | Arquitectos de Software en Los Cabos",
+    title: "Search | Operating Systems — Custom OS for Los Cabos Businesses",
     description:
-      "Diseñamos, construimos y mantenemos sistemas operativos inteligentes para negocios en Los Cabos y Baja California Sur.",
-    creator: "@searchtech",
+      "We build custom operating systems and business software for companies in Los Cabos and Baja California Sur. Agentic AI, PropTech, and 24/7 support.",
+    creator: "@searchoperatingsystems",
   },
   robots: {
     index: true,
@@ -87,6 +103,120 @@ export default function RootLayout({
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-WN4RXZ6Q');`}
         </Script>
+        {/* JSON-LD Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "LocalBusiness",
+                  "@id": "https://searchtech.mx/#organization",
+                  "name": "Search | Operating Systems",
+                  "alternateName": "Search Operating Systems",
+                  "description": "Diseñamos y construimos sistemas operativos personalizados para negocios en Los Cabos y Baja California Sur. Custom OS, Agentic AI y software empresarial.",
+                  "url": "https://searchtech.mx",
+                  "logo": "https://searchtech.mx/icon.svg",
+                  "image": "https://searchtech.mx/opengraph-image",
+                  "telephone": "+526242644012",
+                  "email": "info@searchwebservices.tech",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Los Cabos",
+                    "addressRegion": "Baja California Sur",
+                    "addressCountry": "MX"
+                  },
+                  "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "22.8905",
+                    "longitude": "-109.9167"
+                  },
+                  "areaServed": [
+                    {
+                      "@type": "City",
+                      "name": "Cabo San Lucas"
+                    },
+                    {
+                      "@type": "City", 
+                      "name": "San José del Cabo"
+                    },
+                    {
+                      "@type": "City",
+                      "name": "La Paz"
+                    },
+                    {
+                      "@type": "City",
+                      "name": "Todos Santos"
+                    },
+                    {
+                      "@type": "State",
+                      "name": "Baja California Sur"
+                    }
+                  ],
+                  "priceRange": "$$$",
+                  "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                    "opens": "09:00",
+                    "closes": "18:00"
+                  },
+                  "sameAs": [
+                    "https://twitter.com/searchtech"
+                  ]
+                },
+                {
+                  "@type": "Service",
+                  "serviceType": "Custom Operating System Development",
+                  "name": "Sistema Operativo Personalizado",
+                  "alternateName": "Custom OS",
+                  "description": "Diseño y desarrollo de sistemas operativos personalizados para negocios. Custom business operating systems built specifically for your workflows.",
+                  "provider": {
+                    "@id": "https://searchtech.mx/#organization"
+                  },
+                  "areaServed": {
+                    "@type": "State",
+                    "name": "Baja California Sur"
+                  },
+                  "availableChannel": {
+                    "@type": "ServiceChannel",
+                    "serviceUrl": "https://searchtech.mx/agendar"
+                  }
+                },
+                {
+                  "@type": "Service",
+                  "serviceType": "Agentic AI Development",
+                  "name": "Agentic AI",
+                  "description": "Asistentes de inteligencia artificial integrados en tu sistema operativo para automatizar decisiones y responder preguntas de negocio.",
+                  "provider": {
+                    "@id": "https://searchtech.mx/#organization"
+                  }
+                },
+                {
+                  "@type": "Service",
+                  "serviceType": "Business Software Development",
+                  "name": "Software Empresarial",
+                  "alternateName": "Business Software",
+                  "description": "Desarrollo de software empresarial a la medida para negocios en Los Cabos y Baja California Sur.",
+                  "provider": {
+                    "@id": "https://searchtech.mx/#organization"
+                  }
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://searchtech.mx/#website",
+                  "url": "https://searchtech.mx",
+                  "name": "Search | Operating Systems",
+                  "description": "Custom Operating Systems for Los Cabos & Baja California Sur",
+                  "publisher": {
+                    "@id": "https://searchtech.mx/#organization"
+                  },
+                  "inLanguage": ["es-MX", "en-US"]
+                }
+              ]
+            })
+          }}
+        />
       </head>
       <body className="antialiased">
         {/* Google Tag Manager (noscript) */}

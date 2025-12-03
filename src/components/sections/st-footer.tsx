@@ -131,7 +131,7 @@ const STFooter = ({ locale = "es" }: STFooterProps) => {
         <div className="container py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-sm text-[var(--st-text-muted)]">
-              © {currentYear} Search Technologies. {t.copyright}
+              © {currentYear} Search | Operating Systems. {t.copyright}
             </div>
 
             <div className="flex items-center gap-6">

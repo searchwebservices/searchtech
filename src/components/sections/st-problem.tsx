@@ -8,48 +8,48 @@ import { AlertTriangle, DollarSign, Lock } from "lucide-react";
 const content = {
   es: {
     badge: "El Problema",
-    headline: ["El Paradigma de Cabo:", "Economía Fuerte, Tecnología Débil"],
-    subtitle: "Los negocios más exitosos de Baja California Sur operan con infraestructura digital del siglo pasado.",
+    headline: ["El Paradigma de Cabo:", "Negocios Sin Sistema Operativo"],
+    subtitle: "Los negocios más exitosos de Baja California Sur operan sin un sistema operativo propio — usando herramientas fragmentadas del siglo pasado.",
     problems: [
       {
-        title: "Caos Operacional",
-        description: "Herramientas fragmentadas (Excel, WhatsApp, etc.) que no se comunican entre sí. Cada día pierde horas reconciliando información manualmente.",
+        title: "Sin Sistema Operativo",
+        description: "Operas con herramientas fragmentadas (Excel, WhatsApp, etc.) en lugar de un sistema operativo unificado. Tu negocio merece un OS personalizado.",
       },
       {
         title: "Costo Prohibitivo",
-        description: "Cotizaciones de apps 'ridículamente caras' (>$10,000 USD) de agencias remotas que no conocen el mercado BCS ni sus necesidades reales.",
+        description: "Cotizaciones de sistemas operativos 'ridículamente caros' (>$1m MXN) de agencias remotas que no conocen el mercado de Los Cabos.",
       },
       {
         title: "Ausencia de Inteligencia",
-        description: "Tus datos están encerrados en tablas sin un asistente que te dé respuestas accionables. No tienes visibilidad en tiempo real de tu negocio.",
+        description: "Tus datos están encerrados sin un sistema operativo inteligente que te dé respuestas. No tienes visibilidad en tiempo real de tu negocio.",
       },
     ],
     quote: '"Economía de primer mundo,',
-    quoteHighlight: " infraestructura digital",
-    quoteEnd: ' de tercer mundo."',
+    quoteHighlight: " sin sistema operativo",
+    quoteEnd: ' propio."',
     quoteAuthor: "— La Paradoja de Cabo",
   },
   en: {
     badge: "The Problem",
-    headline: ["The Cabo Paradox:", "Strong Economy, Weak Technology"],
-    subtitle: "The most successful businesses in Baja California Sur operate with last century's digital infrastructure.",
+    headline: ["The Cabo Paradox:", "Businesses Without Operating Systems"],
+    subtitle: "The most successful businesses in Baja California Sur operate without a custom operating system — using fragmented tools from the last century.",
     problems: [
       {
-        title: "Operational Chaos",
-        description: "Fragmented tools (Excel, WhatsApp, etc.) that don't communicate with each other. Every day you lose hours manually reconciling information.",
+        title: "No Operating System",
+        description: "You're running on fragmented tools (Excel, WhatsApp, etc.) instead of a unified operating system. Your business deserves a custom OS.",
       },
       {
         title: "Prohibitive Cost",
-        description: "App quotes that are 'ridiculously expensive' (>$10,000 USD) from remote agencies that don't understand the BCS market or your real needs.",
+        description: "Quotes for operating systems that are 'ridiculously expensive' (>$1m MXN) from remote agencies that don't understand the Los Cabos market.",
       },
       {
         title: "Absence of Intelligence",
-        description: "Your data is locked in tables without an assistant that gives you actionable answers. You have no real-time visibility into your business.",
+        description: "Your data is locked without an intelligent operating system that gives you answers. You have no real-time visibility into your business.",
       },
     ],
     quote: '"First-world economy,',
-    quoteHighlight: " digital infrastructure",
-    quoteEnd: ' of the third world."',
+    quoteHighlight: " no operating system",
+    quoteEnd: ' of their own."',
     quoteAuthor: "— The Cabo Paradox",
   },
 };

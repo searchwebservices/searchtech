@@ -1,7 +1,7 @@
 {
-  "name": "Search Technologies",
-  "short_name": "Search Tech",
-  "description": "Arquitectos de Software en Los Cabos - Sistemas operativos inteligentes para tu negocio",
+  "name": "Search | Operating Systems",
+  "short_name": "Search OS",
+  "description": "Custom Operating Systems for Los Cabos & Baja California Sur",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0a0a",

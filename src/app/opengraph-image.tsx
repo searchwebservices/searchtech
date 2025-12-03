@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "Search Technologies - Arquitectos de Software en Los Cabos";
+export const alt = "Search | Operating Systems — Custom OS for Los Cabos";
 export const size = {
   width: 1200,
   height: 630,
@@ -92,7 +92,7 @@ export default async function Image() {
               marginBottom: 8,
             }}
           >
-            LA INFRAESTRUCTURA DIGITAL
+            SISTEMAS OPERATIVOS
           </span>
           <span
             style={{
@@ -104,7 +104,7 @@ export default async function Image() {
               lineHeight: 1.2,
             }}
           >
-            QUE CABO SE MERECE
+            PERSONALIZADOS
           </span>
         </div>
 
@@ -117,7 +117,7 @@ export default async function Image() {
             display: "flex",
           }}
         >
-          Arquitectos de Software en Los Cabos
+          Custom OS for Los Cabos & Baja California Sur
         </div>
 
         {/* Bottom Badge */}

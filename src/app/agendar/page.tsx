@@ -153,7 +153,7 @@ export default function AgendarPage() {
               </span>
             </div>
             <div className="text-sm text-[var(--st-text-muted)]">
-              © {new Date().getFullYear()} Search Technologies. Todos los derechos reservados.
+              © {new Date().getFullYear()} Search | Operating Systems. Todos los derechos reservados.
             </div>
           </div>
         </div>

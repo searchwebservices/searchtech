@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "Search Technologies - Software Architects in Los Cabos";
+export const alt = "Search | Operating Systems — Custom OS for Los Cabos";
 export const size = {
   width: 1200,
   height: 630,
