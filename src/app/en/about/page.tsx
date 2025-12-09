@@ -94,8 +94,8 @@ export default function AboutPageEN() {
           </p>
           <p className="mt-4">
             <strong>Schedule a Consultation:</strong>{" "}
-            <a href="https://searchos.tech/en/schedule" className="text-blue-600 hover:underline">
-              searchos.tech/en/schedule
+            <a href="https://searchlabs.netlify.app/get-started" className="text-blue-600 hover:underline">
+              searchlabs.netlify.app/get-started
             </a>
           </p>
         </section>

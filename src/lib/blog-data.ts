@@ -85,7 +85,7 @@ Un sistema operativo personalizado te da la ventaja competitiva que necesitas pa
 
 En Search Operating Systems, diseñamos y construimos sistemas operativos personalizados específicamente para negocios en Los Cabos y Baja California Sur. Nos reunimos contigo en persona para entender tu operación y crear una solución a tu medida.
 
-[Agenda una consulta gratuita](/agendar) y descubre cómo un custom OS puede transformar tu negocio.
+[Agenda una consulta gratuita](https://searchlabs.netlify.app/get-started) y descubre cómo un custom OS puede transformar tu negocio.
     `,
   },
 
@@ -163,7 +163,7 @@ Si identificaste 2 o más señales en tu negocio, es momento de considerar un si
 
 En Search Operating Systems, nos especializamos en crear custom OS para negocios en Los Cabos y Baja California Sur. Entendemos las particularidades de operar en la península y diseñamos soluciones que se adaptan a tu realidad.
 
-[Agenda una consulta gratuita](/agendar) — nos reunimos contigo en persona para evaluar tu situación.
+[Agenda una consulta gratuita](https://searchlabs.netlify.app/get-started) — nos reunimos contigo en persona para evaluar tu situación.
     `,
   },
 
@@ -239,7 +239,7 @@ Un sistema operativo es una inversión de años, no de meses. Considera:
 
 Si tu negocio tiene procesos únicos, clientes exigentes, o planes de crecimiento, un sistema operativo personalizado es la mejor inversión.
 
-En Search Operating Systems, diseñamos soluciones a la medida para negocios en Los Cabos. [Agenda una consulta gratuita](/agendar) para evaluar cuál es la mejor opción para ti.
+En Search Operating Systems, diseñamos soluciones a la medida para negocios en Los Cabos. [Agenda una consulta gratuita](https://searchlabs.netlify.app/get-started) para evaluar cuál es la mejor opción para ti.
     `,
   },
 
@@ -329,7 +329,7 @@ Software construido específicamente para tu negocio, diseñado desde cero para 
 
 Para negocios en Los Cabos con operaciones complejas (rentas, hospitalidad, bienes raíces), un sistema operativo personalizado ofrece mejor ROI a largo plazo.
 
-[Agenda una consulta](/agendar) para evaluar cuál opción es mejor para tu caso específico.
+[Agenda una consulta](https://searchlabs.netlify.app/get-started) para evaluar cuál opción es mejor para tu caso específico.
     `,
   },
 
@@ -399,7 +399,7 @@ Un sistema operativo construido por un equipo que conoce Los Cabos:
 
 Los negocios más exitosos de Cabo ya están invirtiendo en infraestructura digital. La pregunta no es si necesitas un sistema operativo, sino cuándo vas a dar el paso.
 
-[Agenda una consulta gratuita](/agendar) — hablemos de cómo un custom OS puede transformar tu negocio en Los Cabos.
+[Agenda una consulta gratuita](https://searchlabs.netlify.app/get-started) — hablemos de cómo un custom OS puede transformar tu negocio en Los Cabos.
     `,
   },
 
@@ -480,7 +480,7 @@ La automatización no es un lujo — es una necesidad competitiva. Los negocios 
 
 En Search Operating Systems, diseñamos sistemas operativos con automatización inteligente para negocios en BCS.
 
-[Agenda una consulta](/agendar) y descubre qué procesos puedes automatizar en tu negocio.
+[Agenda una consulta](https://searchlabs.netlify.app/get-started) y descubre qué procesos puedes automatizar en tu negocio.
     `,
   },
 
@@ -561,7 +561,7 @@ Diseñamos un sistema operativo específico para su operación:
 
 Si manejas rentas de vehículos, equipos, o propiedades en Los Cabos, un sistema operativo personalizado puede transformar tu operación.
 
-[Agenda una consulta gratuita](/agendar) — te mostramos cómo aplicar estos resultados a tu negocio.
+[Agenda una consulta gratuita](https://searchlabs.netlify.app/get-started) — te mostramos cómo aplicar estos resultados a tu negocio.
     `,
   },
 
@@ -650,7 +650,7 @@ En servidores que tú controlas. Típicamente usamos infraestructura en la nube 
 
 ## Siguiente Paso
 
-¿Tienes más preguntas? [Agenda una consulta gratuita](/agendar) — nos reunimos contigo en persona para resolver todas tus dudas.
+¿Tienes más preguntas? [Agenda una consulta gratuita](https://searchlabs.netlify.app/get-started) — nos reunimos contigo en persona para resolver todas tus dudas.
     `,
   },
 
@@ -728,7 +728,7 @@ Ready to give your business the operating system it deserves?
 
 At Search Operating Systems, we design and build custom operating systems specifically for businesses in Los Cabos and Baja California Sur. We meet with you in person to understand your operation and create a tailored solution.
 
-[Schedule a free consultation](/en/schedule) and discover how a custom OS can transform your business.
+[Schedule a free consultation](https://searchlabs.netlify.app/get-started) and discover how a custom OS can transform your business.
     `,
   },
 
@@ -813,7 +813,7 @@ A custom operating system isn't for everyone. It's for businesses that:
 
 If that sounds like you, let's talk.
 
-[Schedule a free consultation](/en/schedule) — we'll meet in person to evaluate if a custom OS makes sense for your business.
+[Schedule a free consultation](https://searchlabs.netlify.app/get-started) — we'll meet in person to evaluate if a custom OS makes sense for your business.
     `,
   },
 
@@ -889,7 +889,7 @@ An operating system is a multi-year investment, not months. Consider:
 
 If your business has unique processes, demanding clients, or growth plans, a custom operating system is the best investment.
 
-At Search Operating Systems, we design tailored solutions for Los Cabos businesses. [Schedule a free consultation](/en/schedule) to evaluate what's the best option for you.
+At Search Operating Systems, we design tailored solutions for Los Cabos businesses. [Schedule a free consultation](https://searchlabs.netlify.app/get-started) to evaluate what's the best option for you.
     `,
   },
 
@@ -979,7 +979,7 @@ Software built specifically for your business, designed from scratch for your pr
 
 For Los Cabos businesses with complex operations (rentals, hospitality, real estate), a custom operating system offers better long-term ROI.
 
-[Schedule a consultation](/en/schedule) to evaluate which option is better for your specific case.
+[Schedule a consultation](https://searchlabs.netlify.app/get-started) to evaluate which option is better for your specific case.
     `,
   },
 
@@ -1049,7 +1049,7 @@ An operating system built by a team that knows Los Cabos:
 
 The most successful Cabo businesses are already investing in digital infrastructure. The question isn't whether you need an operating system, but when you'll take the step.
 
-[Schedule a free consultation](/en/schedule) — let's talk about how a custom OS can transform your Los Cabos business.
+[Schedule a free consultation](https://searchlabs.netlify.app/get-started) — let's talk about how a custom OS can transform your Los Cabos business.
     `,
   },
 
@@ -1130,7 +1130,7 @@ Automation isn't a luxury — it's a competitive necessity. Businesses that don'
 
 At Search Operating Systems, we design operating systems with intelligent automation for BCS businesses.
 
-[Schedule a consultation](/en/schedule) and discover which processes you can automate in your business.
+[Schedule a consultation](https://searchlabs.netlify.app/get-started) and discover which processes you can automate in your business.
     `,
   },
 
@@ -1211,7 +1211,7 @@ We designed an operating system specific to their operation:
 
 If you manage vehicle, equipment, or property rentals in Los Cabos, a custom operating system can transform your operation.
 
-[Schedule a free consultation](/en/schedule) — we'll show you how to apply these results to your business.
+[Schedule a free consultation](https://searchlabs.netlify.app/get-started) — we'll show you how to apply these results to your business.
     `,
   },
 
@@ -1300,7 +1300,7 @@ On servers you control. We typically use cloud infrastructure (AWS, Google Cloud
 
 ## Next Step
 
-Have more questions? [Schedule a free consultation](/en/schedule) — we'll meet with you in person to answer all your questions.
+Have more questions? [Schedule a free consultation](https://searchlabs.netlify.app/get-started) — we'll meet with you in person to answer all your questions.
     `,
   },
 ];

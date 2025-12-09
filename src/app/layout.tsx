@@ -180,7 +180,7 @@ export default function RootLayout({
                   },
                   "availableChannel": {
                     "@type": "ServiceChannel",
-                    "serviceUrl": "https://searchos.tech/agendar"
+                    "serviceUrl": "https://searchlabs.netlify.app/get-started"
                   }
                 },
                 {

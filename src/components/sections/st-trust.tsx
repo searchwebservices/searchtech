@@ -39,7 +39,7 @@ const content = {
     ctaSubheadEnd: "Gratuita.",
     ctaButton: "Agendar Reunión en Cabo",
     ctaNote: "Reunión presencial en Los Cabos · Sin compromiso · 45 minutos",
-    agendarPath: "/agendar",
+    agendarPath: "https://searchlabs.netlify.app/get-started",
     founders: [
       { name: "Bay Purcell", role: "Co-Founder & Tech Lead" },
       { name: "Borja Ponce", role: "Co-Founder & Operations" },
@@ -68,7 +68,7 @@ const content = {
     ctaSubheadEnd: ".",
     ctaButton: "Schedule Meeting in Cabo",
     ctaNote: "In-person meeting in Los Cabos · No obligation · 45 minutes",
-    agendarPath: "/en/schedule",
+    agendarPath: "https://searchlabs.netlify.app/get-started",
     founders: [
       { name: "Bay Purcell", role: "Co-Founder & Tech Lead" },
       { name: "Borja Ponce", role: "Co-Founder & Operations" },

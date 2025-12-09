@@ -244,7 +244,7 @@ export default function ProductosPage() {
             También construimos sistemas operativos 100% personalizados para tu negocio único.
           </p>
           <Link
-            href="/agendar"
+            href="https://searchlabs.netlify.app/get-started"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[var(--st-primary)] !text-white dark:!text-black font-medium hover:bg-[var(--st-primary-hover)] transition-colors"
           >
             Agendar Consulta

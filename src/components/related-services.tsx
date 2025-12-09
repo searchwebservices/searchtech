@@ -31,7 +31,7 @@ const services = {
       description: "Recursos y guías sobre custom OS",
     },
     {
-      href: "/agendar",
+      href: "https://searchlabs.netlify.app/get-started",
       icon: Calendar,
       title: "Agendar Consulta",
       description: "Consulta gratuita en persona en Cabo",
@@ -57,7 +57,7 @@ const services = {
       description: "Resources and guides on custom OS",
     },
     {
-      href: "/en/schedule",
+      href: "https://searchlabs.netlify.app/get-started",
       icon: Calendar,
       title: "Schedule Consultation",
       description: "Free in-person consultation in Cabo",

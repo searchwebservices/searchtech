@@ -34,7 +34,7 @@ const STNavigation = ({ locale = "es" }: STNavigationProps) => {
   const ctaText = locale === "en" ? "Schedule" : "Agendar";
   const ctaTextMobile = locale === "en" ? "Schedule Meeting" : "Agendar Reunión";
   const homePath = locale === "en" ? "/en" : "/";
-  const agendarPath = locale === "en" ? "/en/schedule" : "/agendar";
+  const agendarPath = "https://searchlabs.netlify.app/get-started";
 
   useEffect(() => {
     const handleScroll = () => {

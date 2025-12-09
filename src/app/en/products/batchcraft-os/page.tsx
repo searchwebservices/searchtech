@@ -54,7 +54,7 @@ export default function BatchCraftOSPage() {
 
               <div className="flex flex-wrap justify-center gap-4 mb-12">
                 <Link
-                  href="/en/demo"
+                  href="https://searchlabs.netlify.app/get-started"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[var(--st-primary)] !text-white dark:!text-black font-medium hover:bg-[var(--st-primary-hover)] transition-colors"
                 >
                   <Calendar className="w-4 h-4" />
@@ -177,7 +177,7 @@ export default function BatchCraftOSPage() {
                 </ul>
 
                 <Link
-                  href="/en/demo"
+                  href="https://searchlabs.netlify.app/get-started"
                   className="block w-full py-4 rounded-xl bg-[var(--st-primary)] !text-white dark:!text-black font-medium text-center hover:bg-[var(--st-primary-hover)] transition-colors"
                 >
                   Schedule Free Consultation

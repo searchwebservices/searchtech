@@ -244,7 +244,7 @@ export default function ProductsPage() {
             We also build 100% custom operating systems for your unique business.
           </p>
           <Link
-            href="/en/schedule"
+            href="https://searchlabs.netlify.app/get-started"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[var(--st-primary)] !text-white dark:!text-black font-medium hover:bg-[var(--st-primary-hover)] transition-colors"
           >
             Schedule Consultation

@@ -90,7 +90,7 @@ export default function SistemaOperativoPersonalizado() {
               <ThemeToggle />
               <LanguageToggle locale="es" />
               <Button asChild size="sm" className="bg-[var(--st-primary)] hover:bg-[var(--st-primary-hover)] !text-white dark:!text-black">
-                <Link href="/agendar">
+                <Link href="https://searchlabs.netlify.app/get-started">
                   <Calendar className="w-4 h-4 mr-2" />
                   Agendar
                 </Link>
@@ -125,7 +125,7 @@ export default function SistemaOperativoPersonalizado() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-[var(--st-primary)] hover:bg-[var(--st-primary-hover)] text-lg px-8 !text-white dark:!text-black">
-                <Link href="/agendar">
+                <Link href="https://searchlabs.netlify.app/get-started">
                   Solicitar Demo Gratuita
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
@@ -274,7 +274,7 @@ export default function SistemaOperativoPersonalizado() {
               Agenda una consulta gratuita con nuestros arquitectos de sistemas operativos en Los Cabos.
             </p>
             <Button asChild size="lg" className="bg-[var(--st-primary)] hover:bg-[var(--st-primary-hover)] text-lg px-8 !text-white dark:!text-black">
-              <Link href="/agendar">
+              <Link href="https://searchlabs.netlify.app/get-started">
                 <Calendar className="w-5 h-5 mr-2" />
                 Agendar Consulta Gratuita
               </Link>
