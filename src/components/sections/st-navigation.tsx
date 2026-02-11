@@ -3,10 +3,11 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Calendar, Search } from "lucide-react";
+import { Menu, X, MessageCircle, Search } from "lucide-react";
 import Link from "next/link";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { LanguageToggle } from "@/components/language-toggle";
+import { CONTACT_PATHS } from "@/lib/contact";
 
 const navLinksEs = [
   { href: "#problema", label: "El Problema" },
@@ -31,10 +32,10 @@ const STNavigation = ({ locale = "es" }: STNavigationProps) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks = locale === "en" ? navLinksEn : navLinksEs;
-  const ctaText = locale === "en" ? "Schedule" : "Agendar";
-  const ctaTextMobile = locale === "en" ? "Schedule Meeting" : "Agendar Reunión";
+  const ctaText = locale === "en" ? "Contact" : "Contacto";
+  const ctaTextMobile = locale === "en" ? "Contact" : "Contactar";
   const homePath = locale === "en" ? "/en" : "/";
-  const agendarPath = "https://searchlabs.netlify.app/get-started";
+  const contactPath = locale === "en" ? CONTACT_PATHS.en : CONTACT_PATHS.es;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -103,8 +104,8 @@ const STNavigation = ({ locale = "es" }: STNavigationProps) => {
                 size="sm"
                 className="hidden md:inline-flex h-10 px-5 text-sm font-medium bg-[var(--st-primary)] hover:bg-[var(--st-primary-light)] rounded-full transition-all duration-300 !text-white dark:!text-black"
               >
-                <Link href={agendarPath} className="flex items-center">
-                  <Calendar className="w-4 h-4 mr-2" />
+                <Link href={contactPath} className="flex items-center">
+                  <MessageCircle className="w-4 h-4 mr-2" />
                   {ctaText}
                 </Link>
               </Button>
@@ -176,8 +177,8 @@ const STNavigation = ({ locale = "es" }: STNavigationProps) => {
                     asChild
                     className="w-full h-12 text-base font-medium bg-[var(--st-primary)] hover:bg-[var(--st-primary-light)] rounded-full !text-white dark:!text-black"
                   >
-                    <Link href={agendarPath} onClick={() => setIsMobileMenuOpen(false)} className="flex items-center justify-center">
-                      <Calendar className="w-5 h-5 mr-2" />
+                    <Link href={contactPath} onClick={() => setIsMobileMenuOpen(false)} className="flex items-center justify-center">
+                      <MessageCircle className="w-5 h-5 mr-2" />
                       {ctaTextMobile}
                     </Link>
                   </Button>

@@ -82,8 +82,8 @@ export default function AboutPageEN() {
           </address>
           <p className="mt-4">
             <strong>Email:</strong>{" "}
-            <a href="mailto:info@searchwebservices.tech" itemProp="email" className="text-blue-600 hover:underline">
-              info@searchwebservices.tech
+            <a href="mailto:hola@searchvisionary.tech" itemProp="email" className="text-blue-600 hover:underline">
+              hola@searchvisionary.tech
             </a>
           </p>
           <p>
@@ -94,8 +94,8 @@ export default function AboutPageEN() {
           </p>
           <p className="mt-4">
             <strong>Schedule a Consultation:</strong>{" "}
-            <a href="https://searchlabs.netlify.app/get-started" className="text-blue-600 hover:underline">
-              searchlabs.netlify.app/get-started
+            <a href="/en/schedule" className="text-blue-600 hover:underline">
+              searchos.tech/en/schedule
             </a>
           </p>
         </section>
@@ -167,7 +167,7 @@ export default function AboutPageEN() {
             "url": "https://searchos.tech",
             "logo": "https://searchos.tech/icon.svg",
             "telephone": "+526242644012",
-            "email": "info@searchwebservices.tech",
+            "email": "hola@searchvisionary.tech",
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "Los Cabos",
@@ -196,4 +196,3 @@ export default function AboutPageEN() {
     </main>
   );
 }
-

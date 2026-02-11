@@ -12,8 +12,8 @@ const routeMappings: [string, string][] = [
   // Main pages
   ["/", "/en"],
   
-  // Schedule/Demo pages (all point to the same equivalent)
-  ["/agendar", "/en/demo"],
+  // Contact pages
+  ["/agendar", "/en/schedule"],
   
   // About pages
   ["/about", "/en/about"],
@@ -44,7 +44,7 @@ const routeMappings: [string, string][] = [
  * (for paths that have different names in English but weren't auto-matched)
  */
 const additionalEnglishMappings: Record<string, string> = {
-  "/en/schedule": "/agendar", // Legacy English schedule path
+  "/en/demo": "/agendar", // Legacy English demo path
 };
 
 /**
@@ -69,7 +69,7 @@ function getEquivalentPath(currentPath: string, isEnglish: boolean): string {
     ? currentPath.slice(0, -1) 
     : currentPath;
   
-  // Check additional English mappings first (for special cases like /en/schedule)
+  // Check additional English mappings first (for special cases like /en/demo)
   if (isEnglish && additionalEnglishMappings[normalizedPath]) {
     return additionalEnglishMappings[normalizedPath];
   }

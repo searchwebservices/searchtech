@@ -62,7 +62,7 @@ export default function CaboTailsPage() {
                   View on GitHub
                 </Link>
                 <Link
-                  href="https://searchlabs.netlify.app/get-started"
+                  href="/en/schedule"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-green-500 text-white font-medium hover:bg-green-600 transition-colors"
                 >
                   <Heart className="w-4 h-4" />

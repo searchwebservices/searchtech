@@ -359,7 +359,7 @@ export default function ResourcesPage() {
             Schedule a free consultation and we'll answer all your questions in person.
           </p>
           <Link
-            href="https://searchlabs.netlify.app/get-started"
+            href="/en/schedule"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[var(--st-primary)] !text-white dark:!text-black font-medium hover:bg-[var(--st-primary-hover)] transition-colors"
           >
             Schedule Free Consultation

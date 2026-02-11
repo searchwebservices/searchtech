@@ -16,7 +16,7 @@ const content = {
     ctaPrimary: "Habla con un Arquitecto de Software",
     ctaSecondary: "Ver Casos de Éxito",
     ctaHref: "#casos",
-    agendarPath: "https://searchlabs.netlify.app/get-started",
+    agendarPath: "/agendar",
     badges: [
       "Reuniones en persona en Cabo",
       "Código propietario, no plantillas",
@@ -46,7 +46,7 @@ const content = {
     ctaPrimary: "Talk to a Software Architect",
     ctaSecondary: "View Success Stories",
     ctaHref: "#cases",
-    agendarPath: "https://searchlabs.netlify.app/get-started",
+    agendarPath: "/en/schedule",
     badges: [
       "In-person meetings in Cabo",
       "Proprietary code, not templates",

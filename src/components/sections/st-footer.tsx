@@ -1,7 +1,14 @@
 "use client";
 
 import React from "react";
-import { Mail, Phone, MapPin, ExternalLink, Search } from "lucide-react";
+import { Mail, Phone, MapPin, ExternalLink, Search, MessageCircle } from "lucide-react";
+import {
+  CONTACT_EMAIL,
+  CONTACT_EMAIL_LINK,
+  CONTACT_PHONE_DISPLAY,
+  CONTACT_TEL_LINK,
+  CONTACT_WHATSAPP_LINK,
+} from "@/lib/contact";
 
 const content = {
   es: {
@@ -16,7 +23,7 @@ const content = {
       "Consultoría Técnica",
     ],
     contactTitle: "Contacto",
-    phoneNote: "Teléfonos disponibles en consulta",
+    whatsappCta: "Escribir por WhatsApp",
     copyright: "Todos los derechos reservados.",
     terms: "Términos",
     privacy: "Privacidad",
@@ -33,7 +40,7 @@ const content = {
       "Technical Consulting",
     ],
     contactTitle: "Contact",
-    phoneNote: "Phone numbers available upon request",
+    whatsappCta: "Message on WhatsApp",
     copyright: "All rights reserved.",
     terms: "Terms",
     privacy: "Privacy",
@@ -97,30 +104,30 @@ const STFooter = ({ locale = "es" }: STFooterProps) => {
 
             <div className="space-y-4">
               <div className="bg-[var(--st-surface)] rounded-xl p-4 border border-[var(--st-border)]">
-                <div className="font-medium mb-2">Bay Purcell</div>
                 <a
-                  href="mailto:bay@searchwebservices.tech"
+                  href={CONTACT_EMAIL_LINK}
                   className="flex items-center gap-2 text-sm text-[var(--st-primary)] hover:text-[var(--st-primary-light)] transition-colors"
                 >
                   <Mail className="w-4 h-4" />
-                  bay@searchwebservices.tech
+                  {CONTACT_EMAIL}
                 </a>
               </div>
 
-              <div className="bg-[var(--st-surface)] rounded-xl p-4 border border-[var(--st-border)]">
-                <div className="font-medium mb-2">Borja Ponce</div>
-                <a
-                  href="mailto:info@searchwebservices.tech"
-                  className="flex items-center gap-2 text-sm text-[var(--st-primary)] hover:text-[var(--st-primary-light)] transition-colors"
-                >
-                  <Mail className="w-4 h-4" />
-                  info@searchwebservices.tech
-                </a>
-              </div>
+              <a
+                href={CONTACT_WHATSAPP_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[var(--st-surface)] rounded-xl p-4 border border-[var(--st-border)] flex items-center gap-2 text-sm text-[var(--st-primary)] hover:text-[var(--st-primary-light)] transition-colors"
+              >
+                <MessageCircle className="w-4 h-4" />
+                {t.whatsappCta}
+              </a>
 
               <div className="flex items-center gap-3 text-sm text-[var(--st-text-muted)]">
                 <Phone className="w-4 h-4 text-[var(--st-secondary)]" />
-                <span>{t.phoneNote}</span>
+                <a href={CONTACT_TEL_LINK} className="hover:text-[var(--st-primary)] transition-colors">
+                  {CONTACT_PHONE_DISPLAY}
+                </a>
               </div>
             </div>
           </div>

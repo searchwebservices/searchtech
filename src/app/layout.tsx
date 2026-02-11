@@ -120,7 +120,7 @@ export default function RootLayout({
                   "logo": "https://searchos.tech/icon.svg",
                   "image": "https://searchos.tech/opengraph-image",
                   "telephone": "+526242644012",
-                  "email": "info@searchwebservices.tech",
+                  "email": "hola@searchvisionary.tech",
                   "address": {
                     "@type": "PostalAddress",
                     "addressLocality": "Los Cabos",
@@ -180,7 +180,7 @@ export default function RootLayout({
                   },
                   "availableChannel": {
                     "@type": "ServiceChannel",
-                    "serviceUrl": "https://searchlabs.netlify.app/get-started"
+                    "serviceUrl": "https://searchos.tech/agendar"
                   }
                 },
                 {
